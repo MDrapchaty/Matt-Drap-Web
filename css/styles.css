@@ -1,0 +1,160 @@
+/* This code is hand written and owned by Matt Drapchaty */
+
+/* Css Reset */
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+
+
+/******************* Styling  ***********************/
+
+
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("/fonts/monsterrat/Montserrat-Regular.otf") format("otf");
+}
+
+@font-face {
+  font-family: "Montserrat Bold";
+  src: url("/fonts/monsterrat/Montserrat-Bold.otf") format("otf");
+}
+
+@font-face{
+  font-family: "Montserrat Black";
+  src: url("/fonts/monsterrat/Montserrat-Black.otf") format("otf");
+}
+
+body, html {
+    height: 100%;
+    font: 1rem 'Montserrat', sans-serif;  
+}
+
+
+
+/**** Landing Page ****/
+
+/* Overlay */
+
+#overlay {
+    position: fixed; /* Sit on top of the page content */
+    width: 100%; 
+    height: 100%; 
+    top: 0; 
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.2); /* Black background with opacity */
+    z-index: 1; 
+}
+
+/* Landing Page styling */
+
+#landing-page{
+	
+	height: 1200px;
+	background-image: url("../img/bg.jpg");
+	background-color: #cccccc;
+	height: 100%;
+	width: 100%; 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* Header */
+#landing-page h1{
+	width: auto;
+    position: absolute;
+    top: 42.5%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+
+	font-size: 2.5rem;
+	font-weight: 600; 
+	color: white; 
+    z-index: 2;
+}
+#landing-page h1 span{
+
+	position: relative;
+	top: 1rem;
+	white-space: nowrap;
+	
+}
+
+
+/* Get in Touch link */
+#landing-page header a{
+	position: absolute;
+	bottom: 25%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	-ms-transform: translate(-50%,-50%);
+	z-index: 2;
+}
+
+/* scroll down button */
+#landing-page a img{
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	-ms-transform: translate(-50%,-50%);
+	z-index: 2;
+}
+
+/**** What I Do Page ****/
+#what-i-do{
+	height: 600px;
+	background-color: #DEDECD;
+}
