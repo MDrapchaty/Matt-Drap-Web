@@ -180,60 +180,6 @@ body, html {
 
 
 
-/** media query **/
-
-/* large screens */
-
-
-@media screen and (min-width: 1460px) { 
-
-    html{
-    	font-size: 75%;
-    }
-}
-
-@media screen and (max-width: 740px) { 
-
-    html{
-  		font-size: 55%;
- 
-    }
-}
-
-/* small screens */
-@media screen and (max-width: 520px) { 
-
-	html{
-		font-size: 45%;
-	}
-
-	#landing-page h1{
-		
-		margin-top: 2rem;
-	}
-
-    #landing-page h1 span{
-  		white-space: normal;  		
-    }
-
-    #landing-page a img{
-    	width: 4rem;
-    	height: auto;
-    }
-
-}
-/* XS screens/ zoom fixes */
-@media screen and (max-width: 480px){
-	#landing-page h1{
-		min-width: 50%;
-	}
-}
-
-@media screen and (max-width: 360px){
-	#landing-page h1{
-		min-width: 66.66%;
-	}
-}
 
 
 
@@ -268,9 +214,91 @@ body, html {
 /**************** What I Do ********************/
 
 
+#what_i_do{
+	overflow: auto;
+}
 
-#what_i_do h2{
-	font-size: 4rem;
-	font-weight: 600;
+
+#what_i_do h3{
+	font-size: 2.5rem;
+}
+
+.icons{
+	display: inline-block;
+	width: 22.5%;
 	
+	
+	min-width:; 
+}
+
+.icons:nth-child(1) {
+	color: pink;
+}
+
+
+
+
+/********************** media queries ***********************/
+
+/* large screens */
+
+
+@media screen and (min-width: 1460px) { 
+
+    html{
+    	font-size: 75%;
+    }
+}
+
+@media screen and (max-width: 740px) { 
+
+    html{
+  		font-size: 55%;
+ 
+    }
+}
+
+/* small screens (Landing Page) */
+@media screen and (max-width: 520px) { 
+
+	html{
+		font-size: 45%;
+	}
+
+	#landing-page h1{
+		
+		margin-top: 2rem;
+	}
+
+    #landing-page h1 span{
+  		white-space: normal;  		
+    }
+
+    #landing-page a img{
+    	width: 4rem;
+    	height: auto;
+    }
+
+}
+/* XS screens/ zoom fixes */
+@media screen and (max-width: 480px){
+	#landing-page h1{
+		min-width: 50%;
+	}
+}
+
+@media screen and (max-width: 360px){
+	#landing-page h1{
+		min-width: 66.66%;
+	}
+}
+
+@media screen and (max-height: 450px){
+	#landing-page header a{
+		display: none;
+	}
+
+	#scroll_link p{
+		display: none;
+	}
 }
