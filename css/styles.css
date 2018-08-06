@@ -75,7 +75,8 @@ table {
 
 body, html {
     height: 100%;
-    font: 62.5% 'Montserrat', sans-serif;  
+    font: 62.5% 'Montserrat', sans-serif;
+    background-color: #DEDECD; 
 }
  
 
@@ -107,6 +108,7 @@ body, html {
     background-repeat: no-repeat;
     background-size: cover;
     text-align: center;
+    background-attachment: fixed;
 }
 
 /** Header **/
@@ -178,7 +180,7 @@ body, html {
 
 
 
-/** Landing Page media query **/
+/** media query **/
 
 /* large screens */
 
@@ -235,18 +237,15 @@ body, html {
 
 
 
-
-
-/********************** What I Do Page **************************/
-
-/* About */
+/**************** About ******************/
 
 #about{
     text-align: center;
-	padding: 4rem;
-	margin: 4rem auto;
+	padding: 6rem;
+	margin: 6rem auto;
 	max-width: 66.6%;
-	background-color: ;
+	background-color: #DEDECD;
+	border-bottom: .2rem solid #EE9652;
 
 }
 
@@ -258,10 +257,20 @@ body, html {
 #about p{
 	font-size: 2rem;
 	margin: 2rem;
+	max-width: 80rem;
+	margin: 2rem auto;
 	
 }
 
-#what-i-do{
+
+
+
+/**************** What I Do ********************/
+
+
+
+#what_i_do h2{
+	font-size: 4rem;
+	font-weight: 600;
 	
-	background-color: ;
 }
