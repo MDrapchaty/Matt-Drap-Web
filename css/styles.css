@@ -215,7 +215,7 @@ body, html {
 
 
 #what_i_do{
-	overflow: auto;
+	
 }
 
 
@@ -227,14 +227,22 @@ body, html {
 .icons{
 	display: inline-block;
 	width: 22.5%;
-	background-color: white;
-	
 	min-width:; 
 	z-index: 3;
 }
 
-.icons:nth-child(1) {
-	color: pink;
+.icons:nth-child(1)::before {
+	
+    content: '';
+	width: 70px;
+	height: 70px;
+	position: absolute;
+	background: url("../img/strategy.png") no-repeat center center;
+	background-size: 100%;
+
+	
+
+
 }
 
 
