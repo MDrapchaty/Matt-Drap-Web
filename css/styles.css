@@ -187,8 +187,8 @@ body, html {
 
 #about{
     text-align: center;
-	padding: 6rem;
-	margin: 6rem auto;
+	padding: 8rem;
+	margin: 2rem auto;
 	max-width: 66.6%;
 	background-color: #DEDECD;
 	border-bottom: .2rem solid #EE9652;
@@ -202,9 +202,8 @@ body, html {
 
 #about p{
 	font-size: 2rem;
-	margin: 2rem;
 	max-width: 80rem;
-	margin: 2rem auto;
+	margin: 4rem auto 0;
 	
 }
 
@@ -215,41 +214,123 @@ body, html {
 
 
 #what_i_do{
-	position: absolute;
+	width: 100%;
+	height: 100%;
+	/* border: 2px solid black; */
+	margin-top: 6rem;
+	position: relative;
+	overflow: auto;
+	
 }
 
-
-#what_i_do h3{
-	font-size: 2.5rem;
-	font-weight: 600;
-}
+/** Icons **/
 
 .icons{
-	display: inline-block;
-	width: 22.5%;
-	min-width:; 
-	z-index: 3;
+	width: 20%;
+	height: 24rem;
+	float: left;
+	margin-left: 4%;
+	text-align: center;
+	position: relative;
 }
 
-.icons:nth-child(1) h3::before {
+.icons h3{
+	font-size: 2.5rem;
+	font-weight: 600;
+	margin-top: 1rem;
+}
+
+.icons p{
+	font-size: 1.6rem;
+	font-weight: 300;
+	margin-top: 2rem;
+}
+
+.icons h3, .icons p{
+	position: relative;
+	top: 14rem;
+}
+
+
+
+
+
+
+
+
+/* Strategy icon */
+.icons:nth-child(1)::before {
 	
     content: '';
-	width: 70px;
-	height: 70px;
+	width: 12rem;
+	height: 12rem;
 	position: absolute;
 	background: url("../img/strategy.png") no-repeat center center;
 	background-size: 100%;
-	bottom: 10px;
-	
-	
-
-
+	top: 30%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	-ms-transform: translate(-50%,-50%);
 }
 
+/* Design icon */
+.icons:nth-child(2)::before {
+	
+    content: '';
+	width: 12rem;
+	height: 12rem;
+	position: absolute;
+	background: url("../img/design.png") no-repeat center center;
+	background-size: 100%;
+	top: 30%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	-ms-transform: translate(-50%,-50%);	
+}
+
+
+/* Front end icon */
+.icons:nth-child(3)::before {
+	
+    content: '';
+	width: 13rem;
+	height: 13rem;
+	position: absolute;
+	background: url("../img/front-end.png") no-repeat center center;
+	background-size: 100%;
+	top: 30%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	-ms-transform: translate(-50%,-50%);	
+}
+
+/* Back end icon */
+.icons:nth-child(4)::before {
+	
+    content: '';
+	width: 17rem;
+	height: 17rem;
+	position: absolute;
+	background: url("../img/back-end.png") no-repeat center center;
+	background-size: 100%;
+	top: 30%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	-ms-transform: translate(-50%,-50%);	
+}
+
+
+/********* MY WORK  ****************/
+
+#my_work{
+	background-color: pink;
+}
 
 
 
 /********************** media queries ***********************/
+
+/** Landing page **/
 
 /* large screens */
 
@@ -311,5 +392,14 @@ body, html {
 
 	#scroll_link p{
 		display: none;
+	}
+}
+
+/*  What I do */
+
+@media screen and (max-width: 1000px){
+	.icons{
+		width: 42.5%;
+		margin-left: 5%;
 	}
 }
