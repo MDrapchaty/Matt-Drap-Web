@@ -226,6 +226,7 @@ body, html {
 
 .icons{
 	width: 15%;
+
 	height: 100%;
 	float: left;
 	margin-left: 8%;
@@ -280,20 +281,33 @@ body, html {
 
 
 
-
-
 /* Strategy icon */
 .icons:nth-child(1)::before {
     content: '';
 	width: 10rem;
 	height: 10rem;
 	position: absolute;
-	background: url("../img/strategy.svg") no-repeat center center;
-	background-size: 100%;
+	background: url("../img/strategy-white.svg") no-repeat center center;
+	background-size: 75%;
 	top: 10%;
 	left: 50%;
 	transform: translate(-50%,-50%);
 	-ms-transform: translate(-50%,-50%);
+}
+
+
+.icons:nth-child(1)::after {
+    content: '';
+	width: 13rem;
+	height: 13rem;
+	position: absolute;
+	background-color: #0b3c5d;
+	border-radius: 4rem;
+	top: 10%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	-ms-transform: translate(-50%,-50%);
+	z-index: -1;
 }
 
 /* Design icon */
@@ -303,14 +317,27 @@ body, html {
 	width: 10rem;
 	height: 10rem;
 	position: absolute;
-	background: url("../img/design.svg") no-repeat center center;
-	background-size: 100%;
+	background: url("../img/design-white.svg") no-repeat center center;
+	background-size: 75%;
 	top: 10%;
 	left: 50%;
 	transform: translate(-50%,-50%);
 	-ms-transform: translate(-50%,-50%);	
 }
 
+.icons:nth-child(2)::after {
+    content: '';
+	width: 13rem;
+	height: 13rem;
+	position: absolute;
+	background-color: #0b3c5d;
+	border-radius: 4rem;
+	top: 10%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	-ms-transform: translate(-50%,-50%);
+	z-index: -1;
+}
 
 /* Front end icon */
 .icons:nth-child(3)::before {
@@ -318,12 +345,26 @@ body, html {
 	width: 11rem;
 	height: 11rem;
 	position: absolute;
-	background: url("../img/front-end.svg") no-repeat center center;
-	background-size: 100%;
+	background: url("../img/front-end-white.svg") no-repeat center center;
+	background-size: 75%;
 	top: 10%;
 	left: 50%;
 	transform: translate(-50%,-50%);
 	-ms-transform: translate(-50%,-50%);	
+}
+
+.icons:nth-child(3)::after {
+    content: '';
+	width: 13rem;
+	height: 13rem;
+	position: absolute;
+	background-color: #0b3c5d;
+	border-radius: 4rem;
+	top: 10%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	-ms-transform: translate(-50%,-50%);
+	z-index: -1;
 }
 
 /* Back end icon */
@@ -332,12 +373,26 @@ body, html {
 	width: 14rem;
 	height: 14rem;
 	position: absolute;
-	background: url("../img/back-end.svg") no-repeat center center;
-	background-size: 100%;
+	background: url("../img/back-end-white.svg") no-repeat center center;
+	background-size: 80%;
 	top: 10%;
 	left: 50%;
 	transform: translate(-50%,-50%);
 	-ms-transform: translate(-50%,-50%);	
+}
+
+.icons:nth-child(4)::after {
+    content: '';
+	width: 13rem;
+	height: 13rem;
+	position: absolute;
+	background-color: #0b3c5d;
+	border-radius: 4rem;
+	top: 10%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	-ms-transform: translate(-50%,-50%);
+	z-index: -1;
 }
 
 
@@ -438,7 +493,7 @@ body, html {
 
 /*  What I do */
 
-@media screen and (max-width: 1024px){
+@media screen and (max-width: 1100px){
 	#what_i_do{
 		height: 132rem;
 	}
@@ -451,7 +506,7 @@ body, html {
 
 }
 
-@media screen and (max-width: 550px){
+@media screen and (max-width: 700px){
 	#what_i_do{
 		height: 264rem;
 	}
