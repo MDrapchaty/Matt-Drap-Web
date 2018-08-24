@@ -413,6 +413,21 @@ body, html {
 	top: 6rem;
 }
 
+#gallery{
+	width: 60%;
+	margin: 0 auto;
+}
+
+.work_example{
+	display: inline-block;
+	width: 32.5%;
+	height: 20rem;
+	background-color: grey;
+	border: .2rem solid black;
+
+
+}
+
 
 /***********  CONTACT  ***********/
 
