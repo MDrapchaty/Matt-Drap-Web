@@ -222,7 +222,7 @@ body, html {
 	overflow: hidden;
 }
 
-/** Icons **/
+/****** Icons ******/
 
 .icons{
 	width: 15%;
@@ -238,6 +238,7 @@ body, html {
 	font-size: 2.5rem;
 	font-weight: 600;
 	margin-top: 1rem;
+	color: #0b3c5d;
 }
 
 .icons p{
@@ -245,6 +246,7 @@ body, html {
 	font-weight: 300;
 	margin: 2rem auto 0;
 	width: 100%;
+	min-width: 20rem;
 	text-align: center;
 
 }
@@ -261,7 +263,6 @@ body, html {
 	border: .1rem solid black;
 	border-radius: .7rem;
 	background-color: white;
-	font-size: 1.2rem;
 	max-width: 18rem;
 }
 
@@ -274,14 +275,20 @@ body, html {
 }
 
 .icon_tools ul li{
-	margin: 1rem;
+	margin: 1.2rem;
+	font-size: 1.2rem;
+	position: relative;
+	left: 4rem;
+	text-align: left;
 }
 
 
 
 
 
-/* Strategy icon */
+/*** Strategy icon ***/
+
+/* main icon */
 .icons:nth-child(1)::before {
     content: '';
 	width: 10rem;
@@ -295,7 +302,7 @@ body, html {
 	-ms-transform: translate(-50%,-50%);
 }
 
-
+/* main icon bg */
 .icons:nth-child(1)::after {
     content: '';
 	width: 13rem;
@@ -310,7 +317,33 @@ body, html {
 	z-index: -1;
 }
 
-/* Design icon */
+/** li icons **/
+
+/* google hangouts */
+.icons:nth-child(1) ul li:nth-child(1)::before{
+	content: '';
+	width: 4rem;
+	height: 4rem;
+	position: absolute;
+	background: url("../img/tool-icons/g-hangouts.svg") no-repeat center center;
+	background-size: 50%;
+	left: -4rem;
+	top: -1.4rem;
+}
+
+/* google docs */
+.icons:nth-child(1) ul li:nth-child(2)::before{
+	content: '';
+	width: 4rem;
+	height: 4rem;
+	position: absolute;
+	background: url("../img/tool-icons/g-docs.svg") no-repeat center center;
+	background-size: 50%;
+	left: -4rem;
+	top: -1.4rem;
+}
+
+/*** Design icon ***/
 .icons:nth-child(2)::before {
 	
     content: '';
@@ -403,6 +436,7 @@ body, html {
 	width: 100%;
 	text-align: center;
 	height: 66rem;
+	
 }
 
 #my_work h2{
@@ -415,16 +449,16 @@ body, html {
 
 #gallery{
 	width: 60%;
+	height: 48rem;
 	margin: 0 auto;
+	
 }
 
 .work_example{
-	display: inline-block;
-	width: 32.5%;
-	height: 20rem;
+	float: left;
+	width: 33.3%;
+	height: 22rem;
 	background-color: grey;
-	border: .2rem solid black;
-
 
 }
 
@@ -435,6 +469,14 @@ body, html {
 	background-color: #0b3c5d;
 	width: 100%;
 	height: 22rem;
+}
+
+/************* FOOTER ******************/
+
+footer{
+	background-color: #072438;
+	height: 12rem;
+	width: 100%;
 }
 
 
