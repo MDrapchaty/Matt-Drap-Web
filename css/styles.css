@@ -342,6 +342,78 @@ body, html {
 	top: -1.4rem;
 }
 
+/* google drive */
+.icons:nth-child(1) ul li:nth-child(3)::before{
+	content: '';
+	width: 4rem;
+	height: 4rem;
+	position: absolute;
+	background: url("../img/tool-icons/g-drive.svg") no-repeat center center;
+	background-size: 50%;
+	left: -4rem;
+	top: -1.4rem;
+}
+
+/* google drawings */
+.icons:nth-child(1) ul li:nth-child(4)::before{
+	content: '';
+	width: 4rem;
+	height: 4rem;
+	position: absolute;
+	background: url("../img/tool-icons/g-drawings.svg") no-repeat center center;
+	background-size: 50%;
+	left: -4rem;
+	top: -1.4rem;
+}
+
+/* skype */
+.icons:nth-child(1) ul li:nth-child(5)::before{
+	content: '';
+	width: 4rem;
+	height: 4rem;
+	position: absolute;
+	background: url("../img/tool-icons/skype.svg") no-repeat center center;
+	background-size: 50%;
+	left: -4rem;
+	top: -1.4rem;
+}
+
+/* github */
+.icons:nth-child(1) ul li:nth-child(6)::before{
+	content: '';
+	width: 4rem;
+	height: 4rem;
+	position: absolute;
+	background: url("../img/tool-icons/github.png") no-repeat center center;
+	background-size: 50%;
+	left: -4rem;
+	top: -1.4rem;
+}
+
+/* email */
+.icons:nth-child(1) ul li:nth-child(7)::before{
+	content: '';
+	width: 4rem;
+	height: 4rem;
+	position: absolute;
+	background: url("../img/tool-icons/email.svg") no-repeat center center;
+	background-size: 50%;
+	left: -4rem;
+	top: -1.4rem;
+}
+
+/* phone */
+.icons:nth-child(1) ul li:nth-child(8)::before{
+	content: '';
+	width: 4rem;
+	height: 4rem;
+	position: absolute;
+	background: url("../img/tool-icons/phone.png") no-repeat center center;
+	background-size: 50%;
+	left: -4rem;
+	top: -1.4rem;
+}
+
 /*** Design icon ***/
 .icons:nth-child(2)::before {
 	
