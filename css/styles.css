@@ -246,7 +246,6 @@ body, html {
 	font-weight: 300;
 	margin: 2rem auto 0;
 	width: 100%;
-	min-width: 20rem;
 	text-align: center;
 
 }
@@ -295,7 +294,7 @@ body, html {
 	height: 10rem;
 	position: absolute;
 	background: url("../img/strategy-white.svg") no-repeat center center;
-	background-size: 75%;
+	background-size: 65%;
 	top: 10%;
 	left: 50%;
 	transform: translate(-50%,-50%);
@@ -305,8 +304,8 @@ body, html {
 /* main icon bg */
 .icons:nth-child(1)::after {
     content: '';
-	width: 13rem;
-	height: 13rem;
+	width: 12rem;
+	height: 12rem;
 	position: absolute;
 	background-color: #0b3c5d;
 	border-radius: 4rem;
@@ -351,7 +350,7 @@ body, html {
 	height: 10rem;
 	position: absolute;
 	background: url("../img/design-white.svg") no-repeat center center;
-	background-size: 75%;
+	background-size: 65%;
 	top: 10%;
 	left: 50%;
 	transform: translate(-50%,-50%);
@@ -360,8 +359,8 @@ body, html {
 
 .icons:nth-child(2)::after {
     content: '';
-	width: 13rem;
-	height: 13rem;
+	width: 12rem;
+	height: 12rem;
 	position: absolute;
 	background-color: #0b3c5d;
 	border-radius: 4rem;
@@ -379,7 +378,7 @@ body, html {
 	height: 11rem;
 	position: absolute;
 	background: url("../img/front-end-white.svg") no-repeat center center;
-	background-size: 75%;
+	background-size: 65%;
 	top: 10%;
 	left: 50%;
 	transform: translate(-50%,-50%);
@@ -388,8 +387,8 @@ body, html {
 
 .icons:nth-child(3)::after {
     content: '';
-	width: 13rem;
-	height: 13rem;
+	width: 12rem;
+	height: 12rem;
 	position: absolute;
 	background-color: #0b3c5d;
 	border-radius: 4rem;
@@ -407,7 +406,7 @@ body, html {
 	height: 14rem;
 	position: absolute;
 	background: url("../img/back-end-white.svg") no-repeat center center;
-	background-size: 80%;
+	background-size: 70%;
 	top: 10%;
 	left: 50%;
 	transform: translate(-50%,-50%);
@@ -416,8 +415,8 @@ body, html {
 
 .icons:nth-child(4)::after {
     content: '';
-	width: 13rem;
-	height: 13rem;
+	width: 12rem;
+	height: 12rem;
 	position: absolute;
 	background-color: #0b3c5d;
 	border-radius: 4rem;
