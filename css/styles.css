@@ -373,7 +373,7 @@ body, html {
 	height: 4rem;
 	position: absolute;
 	background: url("../img/tool-icons/skype.svg") no-repeat center center;
-	background-size: 50%;
+	background-size: 75%;
 	left: -4rem;
 	top: -1.4rem;
 }
