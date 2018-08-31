@@ -214,68 +214,67 @@ body, html {
 
 
 #what_i_do{
-	width: 100%;
+	width: 95%;
 	height: 66rem;
-	/* border: 2px solid black; */
 	margin: 6rem auto;
 	position: relative;
 	overflow: hidden;
 }
 
-/****** Icons ******/
+/****** Skills ******/
 
-.icons{
-	width: 15%;
-
+.skills{
+	width: 20%;
 	height: 100%;
 	float: left;
-	margin-left: 8%;
+	margin-left: 4%;
 	text-align: center;
 	position: relative;
 }
 
-.icons h3{
+.skills h3{
 	font-size: 2.5rem;
 	font-weight: 600;
 	margin-top: 1rem;
 	color: #0b3c5d;
 }
 
-.icons p{
+.skills p{
 	font-size: 1.6rem;
 	font-weight: 300;
 	margin: 2rem auto 0;
-	width: 100%;
+	width: 90%;
 	text-align: center;
 
 }
 
-.icons h3, .icons p{
+.skills h3, .skills p{
 	position: relative;
 	top: 14rem;
 }
 
-.icon_tools{
+.skills_tools{
 	margin: 4rem auto;
 	position: relative;
 	top: 14rem;
-	border: .1rem solid black;
-	border-radius: .7rem;
+	border: .2rem solid #0b3c5d;
+	border-radius: 2.4rem;
 	background-color: white;
-	max-width: 18rem;
+	width: 90%;
+
 }
 
-.icon_tools h4{
+.skills_tools h4{
 	text-decoration: underline;
-	font-size: 1.6rem;
+	font-size: 1.8rem;
 	color: #0b3c5d;
 	font-weight: 600;
-	margin: 1rem;
+	margin: 1.2rem;
 }
 
-.icon_tools ul li{
-	margin: 1.2rem;
-	font-size: 1.2rem;
+.skills_tools ul li{
+	margin: 1.3rem;
+	font-size: 1.3rem;
 	position: relative;
 	left: 4rem;
 	text-align: left;
@@ -288,7 +287,7 @@ body, html {
 /*** Strategy icon ***/
 
 /* main icon */
-.icons:nth-child(1)::before {
+.skills:nth-child(1)::before {
     content: '';
 	width: 10rem;
 	height: 10rem;
@@ -302,7 +301,7 @@ body, html {
 }
 
 /* main icon bg */
-.icons:nth-child(1)::after {
+.skills:nth-child(1)::after {
     content: '';
 	width: 12rem;
 	height: 12rem;
@@ -316,82 +315,82 @@ body, html {
 	z-index: -1;
 }
 
-/** li icons **/
+/** strategy li icons **/
 
 /* google hangouts */
-.icons:nth-child(1) ul li:nth-child(1)::before{
+.skills:nth-child(1) ul li:nth-child(1)::before{
 	content: '';
 	width: 4rem;
 	height: 4rem;
 	position: absolute;
 	background: url("../img/tool-icons/g-hangouts.svg") no-repeat center center;
-	background-size: 50%;
+	background-size: 55%;
 	left: -4rem;
 	top: -1.4rem;
 }
 
 /* google docs */
-.icons:nth-child(1) ul li:nth-child(2)::before{
+.skills:nth-child(1) ul li:nth-child(2)::before{
 	content: '';
 	width: 4rem;
 	height: 4rem;
 	position: absolute;
 	background: url("../img/tool-icons/g-docs.svg") no-repeat center center;
-	background-size: 50%;
+	background-size: 55%;
 	left: -4rem;
 	top: -1.4rem;
 }
 
 /* google drive */
-.icons:nth-child(1) ul li:nth-child(3)::before{
+.skills:nth-child(1) ul li:nth-child(3)::before{
 	content: '';
 	width: 4rem;
 	height: 4rem;
 	position: absolute;
 	background: url("../img/tool-icons/g-drive.svg") no-repeat center center;
-	background-size: 50%;
+	background-size: 55%;
 	left: -4rem;
 	top: -1.4rem;
 }
 
 /* google drawings */
-.icons:nth-child(1) ul li:nth-child(4)::before{
+.skills:nth-child(1) ul li:nth-child(4)::before{
 	content: '';
 	width: 4rem;
 	height: 4rem;
 	position: absolute;
 	background: url("../img/tool-icons/g-drawings.svg") no-repeat center center;
-	background-size: 50%;
+	background-size: 55%;
 	left: -4rem;
 	top: -1.4rem;
 }
 
 /* skype */
-.icons:nth-child(1) ul li:nth-child(5)::before{
+.skills:nth-child(1) ul li:nth-child(5)::before{
 	content: '';
 	width: 4rem;
 	height: 4rem;
 	position: absolute;
 	background: url("../img/tool-icons/skype.svg") no-repeat center center;
-	background-size: 75%;
+	background-size: 80%;
 	left: -4rem;
 	top: -1.4rem;
 }
 
 /* github */
-.icons:nth-child(1) ul li:nth-child(6)::before{
+.skills:nth-child(1) ul li:nth-child(6)::before{
 	content: '';
 	width: 4rem;
 	height: 4rem;
 	position: absolute;
 	background: url("../img/tool-icons/github.png") no-repeat center center;
-	background-size: 50%;
+	background-size: 55%;
 	left: -4rem;
 	top: -1.4rem;
 }
 
 /* email */
-.icons:nth-child(1) ul li:nth-child(7)::before{
+.skills:nth-child(1) ul li:nth-child(7)::before{
 	content: '';
 	width: 4rem;
 	height: 4rem;
@@ -403,7 +402,7 @@ body, html {
 }
 
 /* phone */
-.icons:nth-child(1) ul li:nth-child(8)::before{
+.skills:nth-child(1) ul li:nth-child(8)::before{
 	content: '';
 	width: 4rem;
 	height: 4rem;
@@ -415,7 +414,9 @@ body, html {
 }
 
 /*** Design icon ***/
-.icons:nth-child(2)::before {
+
+/* main icon */
+.skills:nth-child(2)::before {
 	
     content: '';
 	width: 10rem;
@@ -429,7 +430,8 @@ body, html {
 	-ms-transform: translate(-50%,-50%);	
 }
 
-.icons:nth-child(2)::after {
+/* main icon bg */
+.skills:nth-child(2)::after {
     content: '';
 	width: 12rem;
 	height: 12rem;
@@ -443,8 +445,92 @@ body, html {
 	z-index: -1;
 }
 
-/* Front end icon */
-.icons:nth-child(3)::before {
+
+ /** design li icons **/
+
+/* adobe illustrator */
+
+.skills:nth-child(2) ul li:nth-child(1)::before{
+	content: '';
+	width: 4rem;
+	height: 4rem;
+	position: absolute;
+	background: url("../img/tool-icons/a-illustrator.svg") no-repeat center center;
+	background-size: 55%;
+	left: -4rem;
+	top: -1.4rem;
+}
+
+/* adobe photoshop */
+
+.skills:nth-child(2) ul li:nth-child(2)::before{
+	content: '';
+	width: 4rem;
+	height: 4rem;
+	position: absolute;
+	background: url("../img/tool-icons/a-photoshop.svg") no-repeat center center;
+	background-size: 55%;
+	left: -4rem;
+	top: -1.4rem;
+}
+
+/* adobe xd */
+
+.skills:nth-child(2) ul li:nth-child(3)::before{
+	content: '';
+	width: 4rem;
+	height: 4rem;
+	position: absolute;
+	background: url("../img/tool-icons/a-xd.svg") no-repeat center center;
+	background-size: 55%;
+	left: -4rem;
+	top: -1.4rem;
+}
+
+/* adobe indesign */
+
+.skills:nth-child(2) ul li:nth-child(4)::before{
+	content: '';
+	width: 4rem;
+	height: 4rem;
+	position: absolute;
+	background: url("../img/tool-icons/a-indesign.svg") no-repeat center center;
+	background-size: 55%;
+	left: -4rem;
+	top: -1.4rem;
+}
+
+/* balsamiq */
+
+.skills:nth-child(2) ul li:nth-child(5)::before{
+	content: '';
+	width: 4rem;
+	height: 4rem;
+	position: absolute;
+	background: url("../img/tool-icons/balsamiq.png") no-repeat center center;
+	background-size: 55%;
+	left: -4rem;
+	top: -1.4rem;
+}
+
+/* pencil and paper */
+
+.skills:nth-child(2) ul li:nth-child(6)::before{
+	content: '';
+	width: 4rem;
+	height: 4rem;
+	position: absolute;
+	background: url("../img/tool-icons/paper.svg") no-repeat center center;
+	background-size: 55%;
+	left: -4rem;
+	top: -1.4rem;
+}
+
+
+/**** Front end icon ****/
+
+/* main icon */
+.skills:nth-child(3)::before {
     content: '';
 	width: 11rem;
 	height: 11rem;
@@ -457,7 +543,8 @@ body, html {
 	-ms-transform: translate(-50%,-50%);	
 }
 
-.icons:nth-child(3)::after {
+/* main icon bg*/
+.skills:nth-child(3)::after {
     content: '';
 	width: 12rem;
 	height: 12rem;
@@ -471,8 +558,25 @@ body, html {
 	z-index: -1;
 }
 
-/* Back end icon */
-.icons:nth-child(4)::before {
+/** front-end li icons **/
+
+/* html */
+.skills:nth-child(3) ul li:nth-child(1)::before{
+	content: '';
+	width: 4rem;
+	height: 4rem;
+	position: absolute;
+	background: url("../img/tool-icons/html.svg") no-repeat center center;
+	background-size: 55%;
+	left: -4rem;
+	top: -1.4rem;
+}
+
+
+/*** Back end icon ***/
+
+/* main icon */
+.skills:nth-child(4)::before {
     content: '';
 	width: 14rem;
 	height: 14rem;
@@ -485,7 +589,8 @@ body, html {
 	-ms-transform: translate(-50%,-50%);	
 }
 
-.icons:nth-child(4)::after {
+/* main icon */
+.skills:nth-child(4)::after {
     content: '';
 	width: 12rem;
 	height: 12rem;
@@ -626,7 +731,7 @@ footer{
 		height: 132rem;
 	}
 
-	.icons{
+	.skills{
 		width: 42.5%;
 		margin-left: 5%;
 		height: 50%;
@@ -639,7 +744,7 @@ footer{
 		height: 264rem;
 	}
 
-	.icons{
+	.skills{
 		width: 80%;
 		margin-left: 10%;
 		height: 25%;
