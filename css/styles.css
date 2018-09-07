@@ -94,6 +94,7 @@ body, html {
     bottom: 0;
     background-color: rgba(0,0,0,0.3); /* Black background with opacity */
     z-index: 1; 
+    box-shadow: 0 .2rem .2rem #888888;
 }
 
 /* Landing Page bg */
@@ -109,6 +110,7 @@ body, html {
     background-size: cover;
     text-align: center;
     background-attachment: fixed;
+
 }
 
 /** Header **/
@@ -189,8 +191,7 @@ body, html {
 
 #about_title{
 	width: 100%;
-	height: 20rem;
-	
+	height: 14rem;
 	background-color: #DEDECD;
 
 }
@@ -201,33 +202,57 @@ body, html {
 	text-align: center;
 	text-transform: uppercase;
 	position: relative;
-	top: 8rem;
+	top: 60%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	-ms-transform: translate(-50%,-50%);
 
 }
+
+/** about **/
 
 #about{
+    width: 100%;
     text-align: center;
-	padding: 8rem;
 	margin: 0 auto;
-	width: 60%;
-	padding: 8rem 20%;
 	background-color: #0b3c5d;
 	color: white;
-
-}
-
-#about h3{
-	font-size: 2.5rem;
-	font-weight: 500;
-}
-
-#about p{
-	font-size: 2rem;
-	max-width: 80rem;
-	margin: 4rem auto 0;
+	padding-bottom: 8rem;
 	
 }
 
+#about h3{
+	width: 66%;
+	font-size: 3rem;
+	font-weight: 500;
+	margin: 6rem auto;
+}
+
+#about p{
+	width: 66%;
+	font-size: 2rem;
+	max-width: 80rem;
+	margin: 0 auto;
+}
+
+
+#about_fade{
+  display: block;
+  width: 100%;
+  height: 9rem;
+  background-color: #0b3c5d;
+  fill: #DEDECD;
+  stroke: #DEDECD;
+}
+
+#skills_fade{
+  display: block;
+  width: 100%;
+  height: 9rem;
+  background-color: #DEDECD;
+  fill: white;
+  stroke: white;
+}
 
 
 
@@ -237,7 +262,6 @@ body, html {
 #what_i_do{
 	width: 100%;
 	height: 68rem;
-	margin: 6rem auto;
 	position: relative;
 	overflow: hidden;
 	background-color: #DEDECD;
@@ -248,7 +272,7 @@ body, html {
 
 #skills_title{
 	width: 100%;
-	height: 20rem;
+	height: 14rem;
 	
 	background-color: white;
 
@@ -268,10 +292,9 @@ body, html {
 
 
 .skills{
-	width: 20%;
+	width: 33.3%;
 	height: 100%;
 	float: left;
-	margin-left: 4%;
 	text-align: center;
 	position: relative;
 }
@@ -287,7 +310,7 @@ body, html {
 	font-size: 1.6rem;
 	font-weight: 300;
 	margin: 2rem auto 0;
-	width: 90%;
+	width: 66.6%;
 	text-align: center;
 
 }
@@ -331,6 +354,7 @@ body, html {
 /*** Strategy icon ***/
 
 /* main icon */
+/*
 .skills:nth-child(1)::before {
     content: '';
 	width: 10rem;
@@ -346,6 +370,7 @@ body, html {
 }
 
 /* main icon bg */
+/*
 .skills:nth-child(1)::after {
     content: '';
 	width: 12rem;
@@ -363,6 +388,7 @@ body, html {
 /** strategy li icons **/
 
 /* google hangouts */
+/*
 .skills:nth-child(1) ul li:nth-child(1)::before{
 	content: '';
 	width: 4rem;
@@ -375,6 +401,7 @@ body, html {
 }
 
 /* google docs */
+/*
 .skills:nth-child(1) ul li:nth-child(2)::before{
 	content: '';
 	width: 4rem;
@@ -387,6 +414,7 @@ body, html {
 }
 
 /* google drive */
+/*
 .skills:nth-child(1) ul li:nth-child(3)::before{
 	content: '';
 	width: 4rem;
@@ -399,6 +427,7 @@ body, html {
 }
 
 /* google drawings */
+/*
 .skills:nth-child(1) ul li:nth-child(4)::before{
 	content: '';
 	width: 4rem;
@@ -411,6 +440,7 @@ body, html {
 }
 
 /* skype */
+/*
 .skills:nth-child(1) ul li:nth-child(5)::before{
 	content: '';
 	width: 4rem;
@@ -423,6 +453,7 @@ body, html {
 }
 
 /* github */
+/*
 .skills:nth-child(1) ul li:nth-child(6)::before{
 	content: '';
 	width: 4rem;
@@ -435,6 +466,7 @@ body, html {
 }
 
 /* email */
+/*
 .skills:nth-child(1) ul li:nth-child(7)::before{
 	content: '';
 	width: 4rem;
@@ -447,6 +479,7 @@ body, html {
 }
 
 /* phone */
+/*
 .skills:nth-child(1) ul li:nth-child(8)::before{
 	content: '';
 	width: 4rem;
@@ -461,7 +494,7 @@ body, html {
 /*** Design icon ***/
 
 /* main icon */
-.skills:nth-child(2)::before {
+.skills:nth-child(1)::before {
 	
     content: '';
 	width: 10rem;
@@ -477,7 +510,7 @@ body, html {
 }
 
 /* main icon bg */
-.skills:nth-child(2)::after {
+.skills:nth-child(1)::after {
     content: '';
 	width: 12rem;
 	height: 12rem;
@@ -495,7 +528,7 @@ body, html {
 
 /* adobe illustrator */
 
-.skills:nth-child(2) ul li:nth-child(1)::before{
+.skills:nth-child(1) ul li:nth-child(1)::before{
 	content: '';
 	width: 4rem;
 	height: 4rem;
@@ -508,7 +541,7 @@ body, html {
 
 /* adobe photoshop */
 
-.skills:nth-child(2) ul li:nth-child(2)::before{
+.skills:nth-child(1) ul li:nth-child(2)::before{
 	content: '';
 	width: 4rem;
 	height: 4rem;
@@ -521,7 +554,7 @@ body, html {
 
 /* adobe xd */
 
-.skills:nth-child(2) ul li:nth-child(3)::before{
+.skills:nth-child(1) ul li:nth-child(3)::before{
 	content: '';
 	width: 4rem;
 	height: 4rem;
@@ -534,7 +567,7 @@ body, html {
 
 /* adobe indesign */
 
-.skills:nth-child(2) ul li:nth-child(4)::before{
+.skills:nth-child(1) ul li:nth-child(4)::before{
 	content: '';
 	width: 4rem;
 	height: 4rem;
@@ -547,7 +580,7 @@ body, html {
 
 /* balsamiq */
 
-.skills:nth-child(2) ul li:nth-child(5)::before{
+.skills:nth-child(1) ul li:nth-child(5)::before{
 	content: '';
 	width: 4rem;
 	height: 4rem;
@@ -560,7 +593,7 @@ body, html {
 
 /* pencil and paper */
 
-.skills:nth-child(2) ul li:nth-child(6)::before{
+.skills:nth-child(1) ul li:nth-child(6)::before{
 	content: '';
 	width: 4rem;
 	height: 4rem;
@@ -575,7 +608,7 @@ body, html {
 /**** Front end icon ****/
 
 /* main icon */
-.skills:nth-child(3)::before {
+.skills:nth-child(2)::before {
     content: '';
 	width: 11rem;
 	height: 11rem;
@@ -590,7 +623,7 @@ body, html {
 }
 
 /* main icon bg*/
-.skills:nth-child(3)::after {
+.skills:nth-child(2)::after {
     content: '';
 	width: 12rem;
 	height: 12rem;
@@ -606,7 +639,7 @@ body, html {
 /** front-end li icons **/
 
 /* html */
-.skills:nth-child(3) ul li:nth-child(1)::before{
+.skills:nth-child(2) ul li:nth-child(1)::before{
 	content: '';
 	width: 4rem;
 	height: 4rem;
@@ -621,7 +654,7 @@ body, html {
 /*** Back end icon ***/
 
 /* main icon */
-.skills:nth-child(4)::before {
+.skills:nth-child(3)::before {
     content: '';
 	width: 14rem;
 	height: 14rem;
@@ -636,7 +669,7 @@ body, html {
 }
 
 /* main icon */
-.skills:nth-child(4)::after {
+.skills:nth-child(3)::after {
     content: '';
 	width: 12rem;
 	height: 12rem;
