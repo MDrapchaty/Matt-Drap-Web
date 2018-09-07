@@ -189,14 +189,14 @@ body, html {
 
 /** about title **/
 
-#about_title{
+#about_bg{
 	width: 100%;
 	height: 14rem;
 	background-color: #DEDECD;
 
 }
 
-#about_title h2{
+#about_bg h2{
 	font-size: 3.6rem;
 	font-weight: 600;
 	text-align: center;
@@ -261,7 +261,7 @@ body, html {
 
 #what_i_do{
 	width: 100%;
-	height: 68rem;
+	height: 90rem;
 	position: relative;
 	overflow: hidden;
 	background-color: #DEDECD;
@@ -270,7 +270,7 @@ body, html {
 
 /****** Skills ******/
 
-#skills_title{
+#skills_bg{
 	width: 100%;
 	height: 14rem;
 	
@@ -278,7 +278,7 @@ body, html {
 
 }
 
-#skills_title h2{
+#skills_bg h2{
 	font-size: 3.6rem;
 	font-weight: 600;
 	text-align: center;
@@ -289,11 +289,9 @@ body, html {
 }
 
 
-
-
 .skills{
 	width: 33.3%;
-	height: 100%;
+	height: 60rem;
 	float: left;
 	text-align: center;
 	position: relative;
@@ -322,12 +320,16 @@ body, html {
 
 .skills_tools{
 	margin: 4rem auto;
-	position: relative;
-	top: 14rem;
+	position: absolute;
+	top: 60%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	-ms-transform: translate(-50%,-50%);
 	border: .2rem solid #0b3c5d;
 	border-radius: 2.4rem;
 	background-color: white;
-	width: 90%;
+	width: 80%;
+	height: 22rem;
 
 }
 
@@ -340,161 +342,20 @@ body, html {
 }
 
 .skills_tools ul li{
-	margin: 1.3rem;
-	font-size: 1.3rem;
 	position: relative;
-	left: 4rem;
-	text-align: left;
+	visibility: hidden;
+	display: inline-block;
+	width: 33.3%;
+	height: 8rem; 
+	float: left;
+
 }
 
-
-
-
-
-/*** Strategy icon ***/
-
-/* main icon */
-/*
-.skills:nth-child(1)::before {
-    content: '';
-	width: 10rem;
-	height: 10rem;
-	position: absolute;
-	background: url("../img/strategy-white.svg") no-repeat center center;
-	background-size: 65%;
-	top: 10%;
-	left: 50%;
-	transform: translate(-50%,-50%);
-	-ms-transform: translate(-50%,-50%);
-	z-index: 2;
-}
-
-/* main icon bg */
-/*
-.skills:nth-child(1)::after {
-    content: '';
-	width: 12rem;
-	height: 12rem;
-	position: absolute;
-	background-color: #0b3c5d;
-	border-radius: 4rem;
-	top: 10%;
-	left: 50%;
-	transform: translate(-50%,-50%);
-	-ms-transform: translate(-50%,-50%);
-	
-}
-
-/** strategy li icons **/
-
-/* google hangouts */
-/*
-.skills:nth-child(1) ul li:nth-child(1)::before{
-	content: '';
-	width: 4rem;
-	height: 4rem;
-	position: absolute;
-	background: url("../img/tool-icons/g-hangouts.svg") no-repeat center center;
-	background-size: 55%;
-	left: -4rem;
-	top: -1.4rem;
-}
-
-/* google docs */
-/*
-.skills:nth-child(1) ul li:nth-child(2)::before{
-	content: '';
-	width: 4rem;
-	height: 4rem;
-	position: absolute;
-	background: url("../img/tool-icons/g-docs.svg") no-repeat center center;
-	background-size: 55%;
-	left: -4rem;
-	top: -1.4rem;
-}
-
-/* google drive */
-/*
-.skills:nth-child(1) ul li:nth-child(3)::before{
-	content: '';
-	width: 4rem;
-	height: 4rem;
-	position: absolute;
-	background: url("../img/tool-icons/g-drive.svg") no-repeat center center;
-	background-size: 55%;
-	left: -4rem;
-	top: -1.4rem;
-}
-
-/* google drawings */
-/*
-.skills:nth-child(1) ul li:nth-child(4)::before{
-	content: '';
-	width: 4rem;
-	height: 4rem;
-	position: absolute;
-	background: url("../img/tool-icons/g-drawings.svg") no-repeat center center;
-	background-size: 55%;
-	left: -4rem;
-	top: -1.4rem;
-}
-
-/* skype */
-/*
-.skills:nth-child(1) ul li:nth-child(5)::before{
-	content: '';
-	width: 4rem;
-	height: 4rem;
-	position: absolute;
-	background: url("../img/tool-icons/skype.svg") no-repeat center center;
-	background-size: 80%;
-	left: -4rem;
-	top: -1.4rem;
-}
-
-/* github */
-/*
-.skills:nth-child(1) ul li:nth-child(6)::before{
-	content: '';
-	width: 4rem;
-	height: 4rem;
-	position: absolute;
-	background: url("../img/tool-icons/github.png") no-repeat center center;
-	background-size: 55%;
-	left: -4rem;
-	top: -1.4rem;
-}
-
-/* email */
-/*
-.skills:nth-child(1) ul li:nth-child(7)::before{
-	content: '';
-	width: 4rem;
-	height: 4rem;
-	position: absolute;
-	background: url("../img/tool-icons/email.svg") no-repeat center center;
-	background-size: 50%;
-	left: -4rem;
-	top: -1.4rem;
-}
-
-/* phone */
-/*
-.skills:nth-child(1) ul li:nth-child(8)::before{
-	content: '';
-	width: 4rem;
-	height: 4rem;
-	position: absolute;
-	background: url("../img/tool-icons/phone.png") no-repeat center center;
-	background-size: 50%;
-	left: -4rem;
-	top: -1.4rem;
-}
 
 /*** Design icon ***/
 
 /* main icon */
-.skills:nth-child(1)::before {
+.skills:nth-child(3)::before {
 	
     content: '';
 	width: 10rem;
@@ -510,7 +371,7 @@ body, html {
 }
 
 /* main icon bg */
-.skills:nth-child(1)::after {
+.skills:nth-child(3)::after {
     content: '';
 	width: 12rem;
 	height: 12rem;
@@ -528,87 +389,105 @@ body, html {
 
 /* adobe illustrator */
 
-.skills:nth-child(1) ul li:nth-child(1)::before{
+.skills:nth-child(3) ul li:nth-child(1)::before{
 	content: '';
-	width: 4rem;
-	height: 4rem;
+	width: 5rem;
+	height: 5rem;
 	position: absolute;
 	background: url("../img/tool-icons/a-illustrator.svg") no-repeat center center;
-	background-size: 55%;
-	left: -4rem;
-	top: -1.4rem;
+	background-size: 100%;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%,-50%);
+	-ms-transform: translate(-50%,-50%);
+	visibility: visible;
 }
 
 /* adobe photoshop */
 
-.skills:nth-child(1) ul li:nth-child(2)::before{
+.skills:nth-child(3) ul li:nth-child(2)::before{
 	content: '';
-	width: 4rem;
-	height: 4rem;
+	width: 5rem;
+	height: 5rem;
 	position: absolute;
 	background: url("../img/tool-icons/a-photoshop.svg") no-repeat center center;
-	background-size: 55%;
-	left: -4rem;
-	top: -1.4rem;
+	background-size: 100%;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%,-50%);
+	-ms-transform: translate(-50%,-50%);
+	visibility: visible;
 }
 
 /* adobe xd */
 
-.skills:nth-child(1) ul li:nth-child(3)::before{
+.skills:nth-child(3) ul li:nth-child(3)::before{
 	content: '';
-	width: 4rem;
-	height: 4rem;
+	width: 5rem;
+	height: 5rem;
 	position: absolute;
 	background: url("../img/tool-icons/a-xd.svg") no-repeat center center;
-	background-size: 55%;
-	left: -4rem;
-	top: -1.4rem;
+	background-size: 100%;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%,-50%);
+	-ms-transform: translate(-50%,-50%);
+	visibility: visible;
 }
 
 /* adobe indesign */
 
-.skills:nth-child(1) ul li:nth-child(4)::before{
+.skills:nth-child(3) ul li:nth-child(4)::before{
 	content: '';
-	width: 4rem;
-	height: 4rem;
+	width: 5rem;
+	height: 5rem;
 	position: absolute;
 	background: url("../img/tool-icons/a-indesign.svg") no-repeat center center;
-	background-size: 55%;
-	left: -4rem;
-	top: -1.4rem;
+	background-size: 100%;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%,-50%);
+	-ms-transform: translate(-50%,-50%);
+	visibility: visible;
 }
 
 /* balsamiq */
 
-.skills:nth-child(1) ul li:nth-child(5)::before{
+.skills:nth-child(3) ul li:nth-child(5)::before{
 	content: '';
-	width: 4rem;
-	height: 4rem;
+	width: 5rem;
+	height: 5rem;
 	position: absolute;
 	background: url("../img/tool-icons/balsamiq.png") no-repeat center center;
-	background-size: 55%;
-	left: -4rem;
-	top: -1.4rem;
+	background-size: 100%;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%,-50%);
+	-ms-transform: translate(-50%,-50%);
+	visibility: visible;
 }
 
 /* pencil and paper */
 
-.skills:nth-child(1) ul li:nth-child(6)::before{
+.skills:nth-child(3) ul li:nth-child(6)::before{
 	content: '';
-	width: 4rem;
-	height: 4rem;
+	width: 5rem;
+	height: 5rem;
 	position: absolute;
 	background: url("../img/tool-icons/paper.svg") no-repeat center center;
-	background-size: 55%;
-	left: -4rem;
-	top: -1.4rem;
+	background-size: 100%;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%,-50%);
+	-ms-transform: translate(-50%,-50%);
+	visibility: visible;
 }
 
 
 /**** Front end icon ****/
 
 /* main icon */
-.skills:nth-child(2)::before {
+.skills:nth-child(4)::before {
     content: '';
 	width: 11rem;
 	height: 11rem;
@@ -623,7 +502,7 @@ body, html {
 }
 
 /* main icon bg*/
-.skills:nth-child(2)::after {
+.skills:nth-child(4)::after {
     content: '';
 	width: 12rem;
 	height: 12rem;
@@ -639,7 +518,7 @@ body, html {
 /** front-end li icons **/
 
 /* html */
-.skills:nth-child(2) ul li:nth-child(1)::before{
+.skills:nth-child(4) ul li:nth-child(1)::before{
 	content: '';
 	width: 4rem;
 	height: 4rem;
@@ -654,7 +533,7 @@ body, html {
 /*** Back end icon ***/
 
 /* main icon */
-.skills:nth-child(3)::before {
+.skills:nth-child(5)::before {
     content: '';
 	width: 14rem;
 	height: 14rem;
@@ -669,7 +548,7 @@ body, html {
 }
 
 /* main icon */
-.skills:nth-child(3)::after {
+.skills:nth-child(5)::after {
     content: '';
 	width: 12rem;
 	height: 12rem;
@@ -807,13 +686,15 @@ footer{
 
 @media screen and (max-width: 1100px){
 	#what_i_do{
-		height: 132rem;
+		height: 146rem;
 	}
 
 	.skills{
-		width: 42.5%;
-		margin-left: 5%;
-		height: 50%;
+		width: 50%;
+	}
+
+	.skills:nth-child(5){
+
 	}
 
 }
