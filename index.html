@@ -3,11 +3,9 @@
 <html lang="en">
 	<head>
 		<meta charset="UTF-8">
-		
     <link rel="stylesheet" href="css/styles.css">
 		<title>Matt Drapchaty: Web Designer & Developer</title>
-		
-		<meta name="viewport" content="width=device-width; initial-scale=1; maximum-scale=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 	</head>
 	<body>
 	  
@@ -28,8 +26,9 @@
       </section>
        
        <section id="about">
-        <div id="about_bg">
+        <div id="about_bg" >
           <h2>about</h2>
+          <div class="scroll about_bar"></div>
         </div>
          <svg preserveAspectRatio="none" viewBox="0 0 100 100"  width="100%"  xmlns="http://www.w3.org/2000/svg" id="about_fade">
            <path d="M0 0 L50 75 L100 0 Z"></path>
@@ -44,6 +43,7 @@
       <section id="what_i_do">
         <div id="skills_bg">
           <h2>skills</h2>
+          <div id="skills_bar" class="scroll"></div>
        </div>
        <svg preserveAspectRatio="none" viewBox="0 0 100 100"  width="100%"  xmlns="http://www.w3.org/2000/svg" id="skills_fade">
          <path d="M0 0 L50 75 L100 0 Z"></path>
@@ -99,8 +99,9 @@
       <section id="projects">
       	<div id="projects_bg">
           <h2>Projects</h2>
+          <div id="projects_bar" class="scroll"></div>
         </div>
-        <svg preserveAspectRatio="none" viewBox="0 0 100 100"  width="100%"  xmlns="http://www.w3.org/2000/svg" id="projects_fade">
+          <svg preserveAspectRatio="none" viewBox="0 0 100 100"  width="100%"  xmlns="http://www.w3.org/2000/svg" id="projects_fade">
              <path d="M0 0 L50 75 L100 0 Z"></path>
           </svg>   
         	<div id="gallery"> 
@@ -126,6 +127,7 @@
       </section>
       <section id="contact">
           <h2>Contact</h2>
+          <div id="contact_bar"></div>
           <p>Interested in working together? Feel free to reach out if you'd like to get in touch, collaborate, or to just say hello. I'd love to hear from you.</p>
           <form action="/action_page.php">
             <input type="text" name="firstname" placeholder="Name"><br>
@@ -133,8 +135,12 @@
             <textarea placeholder="Your Message" name="message" id="message" cols="50" rows="10"></textarea><br>
             <input type="submit" id="submit" value="SUBMIT">
           </form>
-        </section>
+      </section>
+      
       <footer>
+        <svg preserveAspectRatio="none" viewBox="0 0 100 100"  width="100%"  xmlns="http://www.w3.org/2000/svg" id="footer_fade">
+             <path d="M0 100 L50 25 L100 100 Z"></path>
+        </svg> 
       	 <ul>
       	 	<li>Github</li>
       	 	<li>LinkedIn</li>
@@ -142,6 +148,10 @@
       	 </ul>
       	 <p> This website was designed and built by hand, by me &copy; Matt Drapchaty 2018 </p>
       </footer>
-	
+  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="js/jquery.waypoints.min.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/waypoint.js"></script>
+
 </body>
 </html>
