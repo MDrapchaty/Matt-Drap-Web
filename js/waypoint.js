@@ -48,7 +48,13 @@ $elem.waypoint(function () {
     i.each( function() {
       var element = $(this);
           element.waypoint(function() {
-            element.addClass('slide');
+          	if (element.attr('data-dir') == 'right') {
+          		element.addClass('slide_right');
+          	}else if (element.attr('data-dir') == 'left'){
+          		element.addClass('slide_left');
+          	};
+          	
+            
             },{
                 triggerOnce: true,
                 offset: '50%'
@@ -56,4 +62,4 @@ $elem.waypoint(function () {
     });
   }
 
-  setTimeout(function() { scroll($('.scroll')) }, 10);
+  setTimeout(function() { scroll($('.scroll_bar')) }, 10);

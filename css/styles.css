@@ -78,7 +78,20 @@ body, html {
     font: 62.5% 'Montserrat', sans-serif;
      
 }
- 
+
+h2{
+	font-size: 3.6rem;
+	font-weight: 600;
+	text-align: center;
+	text-transform: uppercase;
+	position: relative;
+	top: 60%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	-ms-transform: translate(-50%,-50%);
+
+}
+
 
 /************************ Landing Page ****************************/
 
@@ -197,17 +210,13 @@ body, html {
 }
 
 #about_bg h2{
-	font-size: 3.6rem;
-	font-weight: 600;
-	text-align: center;
-	text-transform: uppercase;
-	position: relative;
-	top: 60%;
-	left: 50%;
-	transform: translate(-50%,-50%);
-	-ms-transform: translate(-50%,-50%);
-
+	color: #072438;
 }
+
+#about_bg .scroll_bar{
+	background-color: #072438;
+}
+
 
 /** about **/
 
@@ -246,42 +255,7 @@ body, html {
 }
 
 
-.scroll{
-	height: .4rem;
-	width: 7rem;
-	background-color: white;
-	position: relative;
-	top: 60%;
-	left: 0;
-	transform: translate(-50%,-50%);
-	-ms-transform: translate(-50%,-50%); 
-	opacity: 0;
-	transition: all 500ms ease-in;
-}
 
-.slide{
-	opacity: 1;
-	animation: slide_right 1s linear;
-	animation-fill-mode: forwards;
-}
-
-@keyframes slide_right{
-	0% {
-		  left: 25%;
-	}
-	25%{
-		  left: 31.25%;
-	}
-	50%{
-		  left: 37.5%;
-	}
-	75%{
-		  left: 43.75%;
-	}
-	100%{
-		  left: 50%;
-	}
-}
 
 
 
@@ -302,8 +276,8 @@ body, html {
   width: 100%;
   height: 9rem;
   background-color: #DEDECD;
-  fill: white;
-  stroke: white;
+  fill: #f5f5f5;
+  stroke: #f5f5f5;
 }
 
 /****** Skills ******/
@@ -311,22 +285,10 @@ body, html {
 #skills_bg{
 	width: 100%;
 	height: 14rem;
-	
-	background-color: white;
-
+	background-color: #f5f5f5;	
 }
 
-#skills_bg h2{
-	font-size: 3.6rem;
-	font-weight: 600;
-	text-align: center;
-	text-transform: uppercase;
-	position: relative;
-	top: 60%;
-	left: 50%;
-	transform: translate(-50%,-50%);
-	-ms-transform: translate(-50%,-50%);
-}
+
 
 /* skills bar */
 #skills_bg div:nth-child(2){
@@ -792,33 +754,13 @@ body, html {
 #projects_bg{
 	width: 100%;
 	height: 14rem;
-	background-color: #EE9652;
-
+	/*background-color: #EE9652; */
 }
 
-#projects_bg h2{
-	font-size: 3.6rem;
-	font-weight: 600;
-	text-align: center;
-	text-transform: uppercase;
-	position: relative;
-	top: 60%;
-	left: 50%;
-	transform: translate(-50%,-50%);
-	-ms-transform: translate(-50%,-50%);
-	color: white;
+#projects_bg .scroll_bar{
+	background-color: black;
 }
 
-#projects_bar{
-	height: .4rem;
-	width: 7rem;
-	background-color: white;
-	position: relative;
-	top: 60%;
-	left: 50%;
-	transform: translate(-50%,-50%);
-	-ms-transform: translate(-50%,-50%); 
-}
 
 #projects_fade{
   display: block;
@@ -842,7 +784,7 @@ body, html {
 #gallery{
 	width: 80%;
 	height: 56rem;
-	margin: 0 auto;
+	margin: 4rem auto;
 
 	
 }
@@ -871,7 +813,7 @@ body, html {
 	text-align: center;
 	text-transform: uppercase;
 	position: relative;
-	top: 10rem;
+	top: 15%;
 	color: white;
 }
 
@@ -989,6 +931,77 @@ footer p{
 	text-align: center;
 	position: relative;
 	top: 8rem;
+}
+
+/***************** Animations/ Effects ****************/
+
+
+
+/************ Slide animation ***************/
+
+.scroll_bar{
+	height: .4rem;
+	width: 7rem;
+	background-color: white;
+	position: relative;
+	top: 60%;
+	left: 0;
+	transform: translate(-50%,-50%);
+	-ms-transform: translate(-50%,-50%); 
+	opacity: 0;
+	transition: all 500ms ease-in;
+}
+
+#contact .scroll_bar{
+	top: 15%;
+}
+
+.slide_right{
+	opacity: 1;
+	animation: slide_right 1s linear;
+	animation-fill-mode: forwards;
+}
+
+@keyframes slide_right{
+	0% {
+		  left: 25%;
+	}
+	25%{
+		  left: 31.25%;
+	}
+	50%{
+		  left: 37.5%;
+	}
+	75%{
+		  left: 43.75%;
+	}
+	100%{
+		  left: 50%;
+	}
+}
+
+.slide_left{
+	opacity: 1;
+	animation: slide_left 1s linear;
+	animation-fill-mode: forwards;
+}
+
+@keyframes slide_left{
+	0% {
+		  left: 75%;
+	}
+	25%{
+		  left: 68.75%;
+	}
+	50%{
+		  left: 62.5%;
+	}
+	75%{
+		  left: 56.25%;
+	}
+	100%{
+		  left: 50%;
+	}
 }
 
 
