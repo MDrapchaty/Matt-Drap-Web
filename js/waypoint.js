@@ -1,46 +1,3 @@
-/*
-var $about = $('.about_bar');
-
-$about.waypoint(function(){
-	$about.addClass('animated');
-}, { offset: '50%'});
-
-*/
-
-
-/*   WORKING UGLY
-
-var $elem = $('.on_scroll');
-
-$elem.waypoint(function () {
-	//console.log("test1");
-	var elem = document.getElementById('about_bar');   
-    var pos = elem.style.left + 25;
-    var id = setInterval(frame, 20);
-
-    function frame() {
-      if (pos == 50) {
-        console.log('how many');
-        clearInterval(id);
-        
-      } else {
-        pos++;
-        elem.style.left = pos + '%';
-        console.log(pos); 
-      }
-    } 
-
-}, {  
-	  triggerOnce: true,
-	  offset: $(window).height() / 1.6
-	});
-
-
-*/
-
-//setTimeout(function() { onScroll() }, 10);
-
-
 
 
 // SCROLL ANIMATIONS
@@ -48,9 +5,9 @@ $elem.waypoint(function () {
 // H2 fade
 
 var fadeItem = document.getElementsByClassName("fade");
+var slideItem = document.getElementsByClassName("slide");
 var about = document.getElementById("about");
-var abtContent = document.getElementById("test");
-console.log(abtContent);
+
 
 
 function fade(i){
@@ -88,6 +45,6 @@ function fade(i){
 
 
 
-  setTimeout(function() { slide($('.scroll_bar')) }, 1000);
+  setTimeout(function() { slide($(slideItem)) }, 1000);
   setTimeout(function() { fade($(fadeItem)) }, 1000);
 

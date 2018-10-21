@@ -294,6 +294,7 @@ h2{
 	float: left;
 	text-align: center;
 	position: relative;
+	transition: 500ms ease-in;
 }
 
 .skills:nth-child(3){
@@ -333,7 +334,7 @@ h2{
 	background-color: white;
 	width: 95%;
 	height: 24rem;
-
+	transition: 500ms ease-in;
 }
 
 .skills_tools h4{
@@ -937,7 +938,7 @@ footer p{
 
 /************ Slide animation ***************/
 
-.scroll_bar{
+.slide{
 	height: .4rem;
 	width: 7rem;
 	background-color: #072438;
@@ -951,7 +952,7 @@ footer p{
 
 }
 
-#contact .scroll_bar{
+#contact .slide{
 	top: 15%;
 	background-color: white;
 }
@@ -1004,7 +1005,31 @@ footer p{
 	}
 }
 
+/*
+.slide_up{
+	opacity: 1;
+	animation: slide_up 1s linear;
+	animation-fill-mode: forwards;
+}
 
+@keyframes slide_up{
+	0% {
+		  bottom: 7%;
+	}
+	25%{
+		  bottom: 68.75%;
+	}
+	50%{
+		  bottom: 62.5%;
+	}
+	75%{
+		  bottom: 56.25%;
+	}
+	100%{
+		  bottom: 50%;
+	}
+}
+*/
 
 /********************** media queries ***********************/
 
