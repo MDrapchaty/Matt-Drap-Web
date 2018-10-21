@@ -44,7 +44,31 @@ $elem.waypoint(function () {
 
 
 // SCROLL ANIMATIONS
-  function scroll(i) {
+
+// H2 fade
+
+var fadeItem = document.getElementsByClassName("fade");
+var about = document.getElementById("about");
+var abtContent = document.getElementById("test");
+console.log(abtContent);
+
+
+function fade(i){
+	i.each( function() {
+      var element = $(this);
+          element.waypoint(function() {
+          	element.addClass('fade_in');
+            },{
+                triggerOnce: true,
+                offset: '50%'
+          });
+    });
+}
+
+
+// bar slide
+
+  function slide(i) {
     i.each( function() {
       var element = $(this);
           element.waypoint(function() {
@@ -62,4 +86,8 @@ $elem.waypoint(function () {
     });
   }
 
-  setTimeout(function() { scroll($('.scroll_bar')) }, 10);
+
+
+  setTimeout(function() { slide($('.scroll_bar')) }, 1000);
+  setTimeout(function() { fade($(fadeItem)) }, 1000);
+

@@ -89,7 +89,10 @@ h2{
 	left: 50%;
 	transform: translate(-50%,-50%);
 	-ms-transform: translate(-50%,-50%);
-
+	color: #072438;
+	opacity: 0;
+	transition: all 500ms ease-in;
+	transition-delay: .8s;
 }
 
 
@@ -155,19 +158,22 @@ h2{
 	-ms-transform: translate(-50%,-50%);
 	z-index: 2;
     border: .2rem solid #EE9652;
-    border-radius: 2.5rem;
+   /* border-radius: 2.5rem; */
     font-size: 1.4rem;
     color: white;
     padding: 1.6rem 4rem;
     text-align: center;
     text-decoration: none;
     display: inline-block;
+    transition: 0.3s;
     
 }
 
 /* get in touch link styles (hover) */
 #landing-page header a:hover{
 	background-color: #EE9652;
+	border-color: white;
+	box-shadow: 6px 6px 8px #888888;
 	
 }
 
@@ -209,14 +215,6 @@ h2{
 
 }
 
-#about_bg h2{
-	color: #072438;
-}
-
-#about_bg .scroll_bar{
-	background-color: #072438;
-}
-
 
 /** about **/
 
@@ -235,6 +233,7 @@ h2{
 	font-size: 3rem;
 	font-weight: 500;
 	margin: 6rem auto;
+	transition: 500ms ease-in;
 }
 
 #about p{
@@ -242,6 +241,7 @@ h2{
 	font-size: 2rem;
 	max-width: 80rem;
 	margin: 0 auto;
+	transition: 500ms ease-in;
 }
 
 
@@ -287,14 +287,6 @@ h2{
 	height: 14rem;
 	background-color: #f5f5f5;	
 }
-
-
-
-/* skills bar */
-#skills_bg div:nth-child(2){
-	background-color: black;
-}
-
 
 .skills{
 	width: 30%;
@@ -757,10 +749,6 @@ h2{
 	/*background-color: #EE9652; */
 }
 
-#projects_bg .scroll_bar{
-	background-color: black;
-}
-
 
 #projects_fade{
   display: block;
@@ -863,6 +851,7 @@ h2{
     background: transparent;
     width: 12rem;
     border: .2rem solid white;
+    transition: .3s;
 }
 
 #contact input[type=submit]:hover{
@@ -936,13 +925,22 @@ footer p{
 /***************** Animations/ Effects ****************/
 
 
+/************ Fade animation ****************/
+
+.fade{
+	opacity: 0;
+}
+
+.fade_in{
+	opacity: 1;
+}
 
 /************ Slide animation ***************/
 
 .scroll_bar{
 	height: .4rem;
 	width: 7rem;
-	background-color: white;
+	background-color: #072438;
 	position: relative;
 	top: 60%;
 	left: 0;
@@ -950,10 +948,12 @@ footer p{
 	-ms-transform: translate(-50%,-50%); 
 	opacity: 0;
 	transition: all 500ms ease-in;
+
 }
 
 #contact .scroll_bar{
 	top: 15%;
+	background-color: white;
 }
 
 .slide_right{
