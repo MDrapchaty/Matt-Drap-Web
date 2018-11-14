@@ -5,6 +5,7 @@
 // H2 fade
 
 var fadeItem = document.getElementsByClassName("fade");
+var fadeDelayItem = document.getElementsByClassName("fade_delay");
 var slideItem = document.getElementsByClassName("slide");
 var about = document.getElementById("about");
 
@@ -22,6 +23,17 @@ function fade(i){
     });
 }
 
+function fadeDelay(i){
+	i.each( function() {
+      var element = $(this);
+          element.waypoint(function() {
+          	element.addClass('fade_in');
+            },{
+                triggerOnce: true,
+                offset: '50%'
+          });
+    });
+}
 
 // bar slide
 
@@ -47,4 +59,5 @@ function fade(i){
 
   setTimeout(function() { slide($(slideItem)) }, 1000);
   setTimeout(function() { fade($(fadeItem)) }, 1000);
+  setTimeout(function() { fadeDelay($(fadeDelayItem)) }, 3000);
 

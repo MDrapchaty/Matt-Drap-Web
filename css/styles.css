@@ -333,7 +333,7 @@ h2{
 	border-radius: 2.4rem;
 	background-color: white;
 	width: 95%;
-	height: 24rem;
+	height: 28rem;
 	transition: 500ms ease-in;
 }
 
@@ -352,6 +352,19 @@ h2{
 	width: 30%;
 	height: 8rem; 
 	float: left;
+	margin-top: 1.6rem;
+	
+}
+
+.skills_tools ul li p{
+	font-size: 1.2rem;
+	font-weight: bold;
+	position: relative;
+	top: -4rem;
+}
+
+.skills_tools ul li:hover{
+	visibility: visible;
 }
 
 .skills_tools ul li:nth-child(1){
@@ -774,8 +787,7 @@ h2{
 	width: 80%;
 	height: 56rem;
 	margin: 4rem auto;
-
-	
+	transition: 500ms ease-in;
 }
 
 .work_example{
@@ -930,9 +942,10 @@ footer p{
 
 /************ Fade animation ****************/
 
-.fade{
+.fade, .fade_delay{
 	opacity: 0;
 }
+
 
 .fade_in{
 	opacity: 1;
