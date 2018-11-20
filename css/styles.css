@@ -354,13 +354,20 @@ h2{
 	float: left;
 	margin-top: 1.6rem;
 	
+	
 }
 
 .skills_tools ul li p{
-	font-size: 1.2rem;
+	width: 80%;
+	padding: .3rem;
+	font-size: 1.4rem;
 	font-weight: bold;
 	position: relative;
 	top: -4rem;
+	border: .2rem solid #0b3c5d;
+	background-color: #DEDECD;
+	border-radius: .6rem;
+	color: #0b3c5d;
 }
 
 .skills_tools ul li:hover{
