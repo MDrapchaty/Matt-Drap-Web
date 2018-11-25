@@ -113,9 +113,9 @@ h2{
     box-shadow: 0 .2rem .2rem #888888;
 }
 
-/* Landing Page bg */
+/************* Landing Page **************/
 
-#landing-page{
+#landing_page{
 	
 	background-image: url("../img/bg.jpg");
 	background-color: #cccccc;
@@ -126,11 +126,92 @@ h2{
     background-size: cover;
     text-align: center;
     background-attachment: fixed;
+    display: -webkit-inline-box;
+    display: -moz-inline-box;
+    display: inline-box;
+    display: -webkit-inline-flex;
+    display: -moz-inline-flex;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+}
 
+#landing_page > div {
+  position: absolute;
+  width: 16rem;
+  height: 5rem;
+  -webkit-perspective: 1000px;
+  -moz-perspective: 1000px;
+  perspective: 1000px;
+}
+#landing_page > div > a {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  -ms-transform-style: preserve-3d;
+  -o-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  -webkit-transform: translateZ(-25px);
+  -moz-transform: translateZ(-25px);
+  -ms-transform: translateZ(-25px);
+  -o-transform: translateZ(-25px);
+  transform: translateZ(-25px);
+  -webkit-transition: -webkit-transform 0.25s;
+  -moz-transition: -moz-transform 0.25s;
+  transition: transform 0.25s;
+}
+#landing_page > div > a::before, #landing_page > div > a::after {
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  width: 160px;
+  height: 50px;
+  position: absolute;
+  border: .4rem solid #EE9652;
+  font-weight: bold;
+  box-sizing: border-box;
+  content: attr(title);
+  display: -webkit-box;
+  display: -moz-box;
+  display: box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 1.2rem;
+}
+#landing_page > div > a::before {
+  
+  color: white;
+  -webkit-transform: rotateY(0deg) translateZ(25px);
+  -moz-transform: rotateY(0deg) translateZ(25px);
+  -ms-transform: rotateY(0deg) translateZ(25px);
+  -o-transform: rotateY(0deg) translateZ(25px);
+  transform: rotateY(0deg) translateZ(25px);
+}
+#landing_page > div > a::after {
+  background-color: #EE9652;
+  color: white;
+  -webkit-transform: rotateX(90deg) translateZ(25px);
+  -moz-transform: rotateX(90deg) translateZ(25px);
+  -ms-transform: rotateX(90deg) translateZ(25px);
+  -o-transform: rotateX(90deg) translateZ(25px);
+  transform: rotateX(90deg) translateZ(25px);
+}
+#landing_page > div > a:hover {
+  -webkit-transform: translateZ(-25px) rotateX(-90deg);
+  -moz-transform: translateZ(-25px) rotateX(-90deg);
+  -ms-transform: translateZ(-25px) rotateX(-90deg);
+  -o-transform: translateZ(-25px) rotateX(-90deg);
+  transform: translateZ(-25px) rotateX(-90deg);
 }
 
 /** Header **/
-#landing-page h1{
+#landing_page h1{
 	display: inline-block;
     position: absolute;
     top: 40%;
@@ -143,7 +224,7 @@ h2{
 	margin: 1rem;
     z-index: 2;
 }
-#landing-page h1 span{
+#landing_page h1 span{
 	white-space: nowrap;
 }
 
@@ -207,7 +288,8 @@ h2{
 #about_bg{
 	width: 100%;
 	height: 14rem;
-	background-color: #DEDECD;
+	/*background-color: #DEDECD;*/
+	background-color: #f5f5f5;
 
 }
 
@@ -225,15 +307,16 @@ h2{
 }
 
 #about h3{
-	width: 66%;
+	width: 50%;
 	font-size: 3rem;
 	font-weight: 500;
 	margin: 6rem auto;
 	transition: 500ms ease-in;
+	text-transform: capitalize;
 }
 
 #about p{
-	width: 66%;
+	width: 50%;
 	font-size: 2rem;
 	max-width: 80rem;
 	margin: 0 auto;
@@ -246,8 +329,11 @@ h2{
   width: 100%;
   height: 9rem;
   background-color: #0b3c5d;
-  fill: #DEDECD;
+  /*fill: #DEDECD;
   stroke: #DEDECD;
+  */
+  fill: #f5f5f5;
+  stroke: #f5f5f5;
 }
 
 
@@ -260,13 +346,27 @@ h2{
 
 #what_i_do{
 	width: 100%;
-	height: 86rem;
+	height: 84rem;
 	position: relative;
 	overflow: hidden;
 	background-color: #DEDECD;
-
 }
 
+#what_i_do h2{
+	font-size: 3.6rem;
+	font-weight: 600;
+	text-align: center;
+	text-transform: uppercase;
+	position: relative;
+	top: 10rem;
+	color: #0b3c5d;
+}
+
+#what_i_do .slide{
+	position: relative;
+	top: 16rem;
+}
+/*
 #skills_fade{
   display: block;
   width: 100%;
@@ -275,14 +375,9 @@ h2{
   fill: #f5f5f5;
   stroke: #f5f5f5;
 }
-
+*/
 /****** Skills ******/
 
-#skills_bg{
-	width: 100%;
-	height: 14rem;
-	background-color: #f5f5f5;	
-}
 
 .skills{
 	width: 30%;
@@ -291,7 +386,10 @@ h2{
 	text-align: center;
 	position: relative;
 	transition: 500ms ease-in;
+	top: 18rem;
 }
+
+
 
 .skills:nth-child(3){
 	margin-left: 5%;
@@ -817,7 +915,7 @@ h2{
 	text-align: center;
 	text-transform: uppercase;
 	position: relative;
-	top: 15%;
+	top: 10rem;
 	color: white;
 }
 
@@ -969,6 +1067,8 @@ footer p{
 	transition: all 500ms ease-in;
 
 }
+
+#what_i_do .slide
 
 #contact .slide{
 	top: 15%;
@@ -1140,7 +1240,7 @@ footer p{
 
 @media screen and (max-width: 700px){
 	#what_i_do{
-		height: 214rem;
+		height: 210rem;
 	}
 
 	.skills{
@@ -1165,104 +1265,6 @@ footer p{
 
 
 
-#landing-page {
-  display: -webkit-inline-box;
-  display: -moz-inline-box;
-  display: inline-box;
-  display: -webkit-inline-flex;
-  display: -moz-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-}
-#landing-page > div {
-  position: absolute;
-  width: 16rem;
-  height: 5rem;
-  
-  -webkit-perspective: 1000px;
-  -moz-perspective: 1000px;
-  perspective: 1000px;
-}
-#landing-page > div > a {
-  margin: 0;
-  padding: 0;
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  left: 0;
-  -webkit-transform-style: preserve-3d;
-  -moz-transform-style: preserve-3d;
-  -ms-transform-style: preserve-3d;
-  -o-transform-style: preserve-3d;
-  transform-style: preserve-3d;
-  -webkit-transform: translateZ(-25px);
-  -moz-transform: translateZ(-25px);
-  -ms-transform: translateZ(-25px);
-  -o-transform: translateZ(-25px);
-  transform: translateZ(-25px);
-  -webkit-transition: -webkit-transform 0.25s;
-  -moz-transition: -moz-transform 0.25s;
-  transition: transform 0.25s;
-}
-#landing-page > div > a::before, #landing-page > div > a::after {
-  justify-content: center;
-  align-items: center;
-  margin: 0;
-  width: 160px;
-  height: 50px;
-  position: absolute;
-  border: .5rem solid #EE9652;
-  font-weight: bold;
-  box-sizing: border-box;
-  content: attr(title);
-  display: -webkit-box;
-  display: -moz-box;
-  display: box;
-  display: -webkit-flex;
-  display: -moz-flex;
-  display: -ms-flexbox;
-  display: flex;
-  font-size: 1.2rem;
-}
-#landing-page > div > a::before {
-  
-  color: white;
-  -webkit-transform: rotateY(0deg) translateZ(25px);
-  -moz-transform: rotateY(0deg) translateZ(25px);
-  -ms-transform: rotateY(0deg) translateZ(25px);
-  -o-transform: rotateY(0deg) translateZ(25px);
-  transform: rotateY(0deg) translateZ(25px);
-}
-#landing-page > div > a::after {
-  background-color: #EE9652;
-  color: white;
-  -webkit-transform: rotateX(90deg) translateZ(25px);
-  -moz-transform: rotateX(90deg) translateZ(25px);
-  -ms-transform: rotateX(90deg) translateZ(25px);
-  -o-transform: rotateX(90deg) translateZ(25px);
-  transform: rotateX(90deg) translateZ(25px);
-}
-#landing-page > div > a:hover {
-  -webkit-transform: translateZ(-25px) rotateX(-90deg);
-  -moz-transform: translateZ(-25px) rotateX(-90deg);
-  -ms-transform: translateZ(-25px) rotateX(-90deg);
-  -o-transform: translateZ(-25px) rotateX(-90deg);
-  transform: translateZ(-25px) rotateX(-90deg);
-}
 
-/* this is just icing */
 
-/*
-.main {
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  display: -webkit-box;
-  display: -moz-box;
-  display: box;
-  display: -webkit-flex;
-  display: -moz-flex;
-  display: -ms-flexbox;
-  display: flex;
-}
-*/
+

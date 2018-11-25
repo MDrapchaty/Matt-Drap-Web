@@ -30,7 +30,7 @@ function fadeDelay(i){
           	element.addClass('fade_in');
             },{
                 triggerOnce: true,
-                offset: '50%'
+                offset: '60%'
           });
     });
 }
@@ -50,7 +50,7 @@ function fadeDelay(i){
             
             },{
                 triggerOnce: true,
-                offset: '50%'
+                offset: '60%'
           });
     });
   }
