@@ -1068,10 +1068,9 @@ footer p{
 
 }
 
-#what_i_do .slide
 
 #contact .slide{
-	top: 15%;
+	top: 10rem;
 	background-color: white;
 }
 
