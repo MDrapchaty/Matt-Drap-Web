@@ -358,13 +358,13 @@ h2{
 	text-align: center;
 	text-transform: uppercase;
 	position: relative;
-	top: 10rem;
+	top: 9rem;
 	color: #0b3c5d;
 }
 
 #what_i_do .slide{
 	position: relative;
-	top: 16rem;
+	top: 14rem;
 }
 /*
 #skills_fade{
@@ -417,7 +417,7 @@ h2{
 }
 
 .skills_tools{
-	margin: 4rem auto;
+	margin: 6rem auto;
 	position: absolute;
 	top: 60%;
 	left: 50%;
@@ -915,7 +915,7 @@ h2{
 	text-align: center;
 	text-transform: uppercase;
 	position: relative;
-	top: 10rem;
+	top: 9rem;
 	color: white;
 }
 
@@ -1070,7 +1070,7 @@ footer p{
 
 
 #contact .slide{
-	top: 10rem;
+	top: 9rem;
 	background-color: white;
 }
 
@@ -1258,6 +1258,13 @@ footer p{
 		margin-left: 10%;
 	}
 
+	#about h3, #about p{
+		width: 66.6%;
+	}
+
+	#contact p, #contact form{
+		width: 66.6%;
+	}
 }
 
 
