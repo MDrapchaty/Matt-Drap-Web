@@ -135,7 +135,26 @@ h2{
     display: inline-flex;
 }
 
-#landing_page > div {
+/** Header **/
+#landing_page h1{
+	display: inline-block;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+	font-size: 4rem;
+	font-weight: 700; 
+	color: #FFF; 
+	margin: 1rem;
+    z-index: 2;
+}
+#landing_page h1 span{
+	white-space: nowrap;
+}
+
+
+#landing_page > div{
   position: absolute;
   width: 16rem;
   height: 5rem;
@@ -143,7 +162,8 @@ h2{
   -moz-perspective: 1000px;
   perspective: 1000px;
 }
-#landing_page > div > a {
+
+#landing_page > div > a{
   margin: 0;
   padding: 0;
   width: 100%;
@@ -164,7 +184,7 @@ h2{
   -moz-transition: -moz-transform 0.25s;
   transition: transform 0.25s;
 }
-#landing_page > div > a::before, #landing_page > div > a::after {
+#landing_page > div > a::before, #landing_page > div > a::after{
   justify-content: center;
   align-items: center;
   margin: 0;
@@ -184,7 +204,7 @@ h2{
   display: flex;
   font-size: 1.2rem;
 }
-#landing_page > div > a::before {
+#landing_page > div > a::before{
   
   color: white;
   -webkit-transform: rotateY(0deg) translateZ(25px);
@@ -193,7 +213,7 @@ h2{
   -o-transform: rotateY(0deg) translateZ(25px);
   transform: rotateY(0deg) translateZ(25px);
 }
-#landing_page > div > a::after {
+#landing_page > div > a::after{
   background-color: #EE9652;
   color: white;
   -webkit-transform: rotateX(90deg) translateZ(25px);
@@ -202,7 +222,7 @@ h2{
   -o-transform: rotateX(90deg) translateZ(25px);
   transform: rotateX(90deg) translateZ(25px);
 }
-#landing_page > div > a:hover {
+#landing_page > div > a:hover{
   -webkit-transform: translateZ(-25px) rotateX(-90deg);
   -moz-transform: translateZ(-25px) rotateX(-90deg);
   -ms-transform: translateZ(-25px) rotateX(-90deg);
@@ -210,62 +230,12 @@ h2{
   transform: translateZ(-25px) rotateX(-90deg);
 }
 
-/** Header **/
-#landing_page h1{
-	display: inline-block;
-    position: absolute;
-    top: 40%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    -ms-transform: translate(-50%,-50%);
-	font-size: 4rem;
-	font-weight: 700; 
-	color: #FFF; 
-	margin: 1rem;
-    z-index: 2;
-}
-#landing_page h1 span{
-	white-space: nowrap;
-}
 
 
 
 /* Get in Touch link */
 
-/*
-#landing-page header a{
-	position: absolute;
-	bottom: 20%;
-	left: 50%;
-	transform: translate(-50%,-50%);
-	-ms-transform: translate(-50%,-50%);
-	z-index: 2;
-    border: .2rem solid #EE9652;
-    font-size: 1.4rem;
-    color: white;
-    padding: 1.6rem 4rem;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    transition: 0.3s;
-
-}
-
-
-/* get in touch link styles (hover) */
-/*
-#landing-page header a:hover{
-	background-color: #EE9652;
-	border-color: white;
-
-}
-*/
-
-
-
-/* scroll down link */
-
-.flip-btn{
+.flip_btn{
 	position: absolute;
 	left: 50%;
 	top: 75%;
@@ -275,11 +245,37 @@ h2{
 }
 
 
+/* scroll down link */
 
+#scroll_link{
+	width: auto;	
+	height: 12.5%;
+	position: absolute;
+	bottom: -5%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	-ms-transform: translate(-50%,-50%);
+	z-index: 2;
+    font-size: 1.4rem;
+    color: white;
+    padding: 1.6rem 4rem;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    transition: 0.3s;
+}
 
+#scroll_link p{
+	bottom: 25%;
+}
 
-
-
+#scroll_link img{
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	-ms-transform: translate(-50%,-50%);
+}
 
 /**************** About ******************/
 
@@ -359,7 +355,7 @@ h2{
 	text-transform: uppercase;
 	position: relative;
 	top: 9rem;
-	color: #0b3c5d;
+	color: #072438;
 }
 
 #what_i_do .slide{
@@ -957,7 +953,8 @@ h2{
 }
 
 
-/* submit button */
+/* Submit Button */
+
 #contact input[type=submit]{
 	float: right;
     font-size: 1.6rem;
@@ -967,38 +964,45 @@ h2{
     background: transparent;
     width: 12rem;
     border: .2rem solid white;
-    transition: .3s;
+    transition: .4s;
 }
 
 #contact input[type=submit]:hover{
-	background: #EE9652;
+	background: #072438;
 }
+
 
 /* placeholder text color */
 
 ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
-  color: white;
+  color: white;		
+  font-size: 1.2rem; 
 }
 
 ::-moz-placeholder { /* Firefox 19+ */
   color: white;
+  font-size: 1.2rem; 
 }
 :-ms-input-placeholder { /* IE 10+ */
   color: white;
+  font-size: 1.2rem; 
 }
 :-moz-placeholder { /* Firefox 18- */
   color: white;
+  font-size: 1.2rem; 
 }
 
 
-/* input text color  */
+/* input text  */
 
 textarea:focus, input:focus {
     color: #FFF;
+    font-size: 1.2rem; 
 }
 
 input, select, textarea{
     color: #FFF;
+    font-size: 1.2rem; 
 }
 
 /************* FOOTER ******************/
