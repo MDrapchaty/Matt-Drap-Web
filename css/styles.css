@@ -262,7 +262,7 @@ h2{
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    transition: 0.3s;
+    transition: 0.5s;
 }
 
 #scroll_link p{
@@ -455,7 +455,7 @@ h2{
 	position: relative;
 	top: -4rem;
 	
-	background-color: #EE9652;
+	background-image: linear-gradient(to top right, #B2703D, #FFA168);
 	border-radius: .6rem;
 	color: white;
 }
@@ -969,6 +969,7 @@ h2{
 
 #contact input[type=submit]:hover{
 	background: #072438;
+	border: .2rem solid #072438;
 }
 
 
