@@ -60,7 +60,7 @@ function fadeDelay(i){
   $nav.waypoint(function(direction) {
   if (direction === 'down') {
     console.log('working!');
-    document.getElementsByTagName("NAV")[0].style.opacity = '1.0';
+    document.getElementById("navbar").style.opacity = '1.0';
   }
 }, {
   offset: '5%'
@@ -69,7 +69,7 @@ function fadeDelay(i){
 $nav.waypoint(function(direction) {
   if (direction === 'up') {
     console.log('working! up');
-    document.getElementsByTagName("NAV")[0].style.opacity = '.1';
+    document.getElementById("navbar").style.opacity = '.0';
   }
 }, {
   offset: '5%'
