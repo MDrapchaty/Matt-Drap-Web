@@ -1094,22 +1094,105 @@ input, select, textarea{
 
 footer{
 	background-color: #072438;
-	height: 24rem;
+	height: 40rem;
 	width: 100%;
 	color: white;
 }
 
 footer ul{
 	width: 33.3%;
+	height: 6rem;
 	margin: 0 auto;
 }
 
 footer ul li{
 	display: inline-block;
-	font-size: 2rem;
-	margin-left: 2rem;
+	height: 100%;
+	margin-left: 15%;
 }
 
+footer ul li a{
+  color: pink;
+  text-decoration: none;
+}
+
+
+footer ul li a:hover {
+  color: pink;
+  position: relative;
+}
+
+footer ul li a[data]:hover:after {
+  content: attr(data);
+  
+
+
+    
+    padding: .3rem;
+    font-size: 1.4rem;
+    font-weight: bold;
+    position: absolute;
+    bottom: 0;
+    background-image: linear-gradient(to top right, #B2703D, #FFA168);
+    border-radius: .6rem;
+    color: white;
+}
+
+
+
+footer ul li img{
+	height: 100%;
+}
+
+/*
+#github::after{
+	content: '';
+	width: 10rem;
+	height: 10rem;
+	position: absolute;
+	background: url("../img/github.png") no-repeat center center;
+	background-size: 65%;
+	top: ;
+	left: ;
+	transform: translate(-50%,-50%);
+	-ms-transform: translate(-50%,-50%);
+	z-index: 1;
+}
+
+#github:hover a{
+	visibility: visible;
+}
+
+#linkedin::after{
+	content: '';
+	width: 10rem;
+	height: 10rem;
+	position: absolute;
+	background: url("../img/linkedin.png") no-repeat center center;
+	background-size: 65%;
+	top: ;
+	left: ;
+	transform: translate(-50%,-50%);
+	-ms-transform: translate(-50%,-50%);
+	z-index: 1;
+	
+}
+
+#facebook::after{
+	content: '';
+	width: 10rem;
+	height: 10rem;
+	position: absolute;
+	background: url("../img/facebook.png") no-repeat center center;
+	background-size: 65%;
+	top: ;
+	left: ;
+	transform: translate(-50%,-50%);
+	-ms-transform: translate(-50%,-50%);
+	z-index: 1;
+	
+}
+*/
 footer p{
 	font-size: 1.6rem;
 	text-align: center;
