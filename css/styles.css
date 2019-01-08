@@ -2,11 +2,6 @@
 
 /* Css Reset */
 
-/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
-*/
-
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -50,8 +45,6 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
-
-
 
 
 /******************* Main Styling  ***********************/
@@ -198,7 +191,7 @@ header{
 	color: #EE9652;
 }
 
-#landing_page h1{
+#landing_page h1:nth-of-type(1){
 	display: inline-block;
     position: absolute;
     top: 40%;
@@ -210,7 +203,55 @@ header{
 	color: #FFF; 
 	margin: 1rem;
     z-index: 2;
+	
+
 }
+
+#typed{
+	display: inline-block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+	font-size: 4rem;
+	font-weight: 700; 
+	color: #FFF; 
+	margin: 1rem;
+    z-index: 2;
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid #EE9652; /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .15em; /* Adjust as needed */
+	visibility: hidden;
+    animation: 
+      typing 3.5s steps(350, end),
+      show 1s infinite,
+      blink-caret 1s step-end infinite;
+    
+    max-width: 55%;
+    animation-delay: 1.5s;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+@keyframes show {
+  from { visibility: hidden; }
+  to { visibility: visible; }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: #EE9652; }
+
+}
+
 #landing_page h1 span{
 	white-space: nowrap;
 }
@@ -1124,18 +1165,14 @@ footer ul li a:hover {
 
 footer ul li a[data]:hover:after {
   content: attr(data);
-  
-
-
-    
-    padding: .3rem;
-    font-size: 1.4rem;
-    font-weight: bold;
-    position: absolute;
-    bottom: 0;
-    background-image: linear-gradient(to top right, #B2703D, #FFA168);
-    border-radius: .6rem;
-    color: white;
+  padding: .3rem;
+  font-size: 1.4rem;
+  font-weight: bold;
+  position: absolute;
+  bottom: 0;
+  background-image: linear-gradient(to top right, #B2703D, #FFA168);
+  border-radius: .6rem;
+  color: white;
 }
 
 
