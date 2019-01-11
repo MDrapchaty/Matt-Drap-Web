@@ -129,33 +129,7 @@ h2{
 }
 
 /** Header **/
-header{
-	
-}
 
-#top_nav{
-	width: 100%;
-	position: absolute;
-	top: 0;
-	background-color: ;	
-	
-	/*border-bottom: 2px solid #0b3c5d;*/
-	height: 6rem;
-	z-index: 3;
-	transition: top 0.3s;
-	
-}
-
-
-#top_nav ul li{
-	float: right;
-	margin: 2rem 4rem;
-	display: inline-block;
-	font-size: 2rem;
-	font-weight: bold;
-	color: white;
-    
-}
 
 #navbar{
 	width: 100%;
@@ -191,7 +165,7 @@ header{
 	color: #EE9652;
 }
 
-#landing_page h1:nth-of-type(1){
+#landing_page h1{
 	display: inline-block;
     position: absolute;
     top: 40%;
@@ -203,35 +177,30 @@ header{
 	color: #FFF; 
 	margin: 1rem;
     z-index: 2;
-	
-
+	width: auto;
+	white-space: nowrap; /* Keeps the content on a single line */
 }
+
+
 
 #typed{
 	display: inline-block;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    -ms-transform: translate(-50%,-50%);
 	font-size: 4rem;
 	font-weight: 700; 
 	color: #FFF; 
 	margin: 1rem;
     z-index: 2;
     overflow: hidden; /* Ensures the content is not revealed until the animation */
-    border-right: .15em solid #EE9652; /* The typwriter cursor */
-    white-space: nowrap; /* Keeps the content on a single line */
+    border-right: .5rem solid #EE9652; /* The typwriter cursor */
+     
     margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-    letter-spacing: .15em; /* Adjust as needed */
+    letter-spacing: ; /* Adjust as needed */
 	visibility: hidden;
     animation: 
-      typing 3.5s steps(350, end),
+      typing 2s steps(175, end),
       show 1s infinite,
       blink-caret 1s step-end infinite;
-    
-    max-width: 55%;
-    animation-delay: 1.5s;
+      animation-delay: 1.5s;
 }
 
 /* The typing effect */
@@ -240,6 +209,7 @@ header{
   to { width: 100% }
 }
 
+/* The delay visibility effect */
 @keyframes show {
   from { visibility: hidden; }
   to { visibility: visible; }
@@ -252,10 +222,8 @@ header{
 
 }
 
-#landing_page h1 span{
-	white-space: nowrap;
-}
 
+ /* Get in Touch link effects on landing page */
 
 #landing_page > div{
   position: absolute;
@@ -332,8 +300,6 @@ header{
   -o-transform: translateZ(-25px) rotateX(-90deg);
   transform: translateZ(-25px) rotateX(-90deg);
 }
-
-
 
 
 /* Get in Touch link */
@@ -415,7 +381,7 @@ header{
 }
 
 #about p{
-	width: 50%;
+	width: 66%;
 	font-size: 2rem;
 	max-width: 80rem;
 	margin: 0 auto;
@@ -906,13 +872,13 @@ header{
 	visibility: visible;
 }
 
-/* java */
+/* Git */
 .skills:nth-child(5) ul li:nth-child(4)::before{
 	content: '';
 	width: 7em;
 	height: 7rem;
 	position: absolute;
-	background: url("../img/tool-icons/java.svg") no-repeat center center;
+	background: url("../img/tool-icons/git.svg") no-repeat center center;
 	background-size: 100%;
 	left: 50%;
 	top: 50%;
