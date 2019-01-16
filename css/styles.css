@@ -138,7 +138,6 @@ h2{
 	top: 0;
 	background-color: #F0F0F0;	
 	opacity: .0;
-	/*border-bottom: 2px solid #0b3c5d;*/
 	height: 6rem;
 	z-index: 3;
 	transition: top 0.3s;
@@ -152,6 +151,7 @@ h2{
 #navbar ul li{
 	margin: 2rem 4rem;
 	display: inline-block;
+	font-family: 'Raleway';
 	font-size: 2rem;
 	font-weight: bold;
 	color: #072438;
