@@ -28,6 +28,7 @@ $(function() {
   /* modal */ 
 var work = document.getElementsByClassName('work_example');
 
+/* for loop to run modal code for each work example modal */
 var i;
 for (i = 0; i < work.length; i++) { 
   
@@ -35,7 +36,7 @@ for (i = 0; i < work.length; i++) {
   var modal = document.getElementsByClassName('myModal')[i];
 
   // Get the button that opens the modal
-  var btn = document.getElementsByClassName("myBtn")[i];
+  var btn = document.getElementsByClassName("work_button")[i];
 
   // Get the <span> element that closes the modal
   var span = document.getElementsByClassName("close")[i];
