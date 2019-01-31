@@ -971,7 +971,7 @@ h2{
 .work_button{
 	width: 100%;
 	height: 100%;
-	background-color: pink;
+	background-color: lightgrey;
 	-webkit-transition: 500ms ease-in;
 	-o-transition: 500ms ease-in;
 	transition: 500ms ease-in;
@@ -981,10 +981,6 @@ h2{
 	background-color: #f5f5f5;
 }
 
-
-.work_button:hover::after{
-  content: " test";
-}
 
 
 /* The Modal (background) */
@@ -1002,7 +998,7 @@ h2{
 }
 
 /* Modal Content/Box */
-.modal-content {
+.modal_content {
   background-color: #fefefe;
   margin: 0 auto; /* centered */
   padding: 2rem;
@@ -1162,25 +1158,15 @@ footer{
 
 footer ul{
 	width: 33.3%;
-	height: 6rem;
-	margin: 0 auto;
+	height: 12rem;
+	margin: 10rem auto 0;
+	position: relative;
 }
+
+
 
 footer ul li{
 	display: inline-block;
-	height: 100%;
-	margin-left: 15%;
-}
-
-footer ul li a{
-  color: pink;
-  text-decoration: none;
-}
-
-
-footer ul li a:hover {
-  color: pink;
-  position: relative;
 }
 
 footer ul li a[data]:hover:after {
@@ -1190,71 +1176,54 @@ footer ul li a[data]:hover:after {
   font-weight: bold;
   position: absolute;
   bottom: 0;
+  left: ;
   background-image: linear-gradient(to top right, #B2703D, #FFA168);
   border-radius: .6rem;
   color: white;
 }
 
-
-
 footer ul li img{
-	height: 100%;
-}
-
-/*
-#github::after{
-	content: '';
-	width: 10rem;
-	height: 10rem;
+	width: 8rem;
 	position: absolute;
-	background: url("../img/github.png") no-repeat center center;
-	background-size: 65%;
-	top: ;
-	left: ;
-	transform: translate(-50%,-50%);
-	-ms-transform: translate(-50%,-50%);
-	z-index: 1;
 }
 
-#github:hover a{
-	visibility: visible;
+
+#github img{
+	left: 0;
 }
 
-#linkedin::after{
-	content: '';
-	width: 10rem;
-	height: 10rem;
-	position: absolute;
-	background: url("../img/linkedin.png") no-repeat center center;
-	background-size: 65%;
-	top: ;
-	left: ;
-	transform: translate(-50%,-50%);
-	-ms-transform: translate(-50%,-50%);
-	z-index: 1;
-	
+#github a[data]:hover:after{
+	left: 3%;
+} 
+
+#linkedin img{
+	left: 51%;
+	transform:translateX(-50%);
+	-ms-transform:translateX(-50%);
 }
 
-#facebook::after{
-	content: '';
-	width: 10rem;
-	height: 10rem;
-	position: absolute;
-	background: url("../img/facebook.png") no-repeat center center;
-	background-size: 65%;
-	top: ;
-	left: ;
-	transform: translate(-50%,-50%);
-	-ms-transform: translate(-50%,-50%);
-	z-index: 1;
-	
+#linkedin a[data]:hover:after{
+	left: 50%;
+	transform:translateX(-50%);
+	-ms-transform:translateX(-50%);
+} 
+
+#facebook img{
+	right: 3%;
 }
-*/
+
+#facebook a[data]:hover:after{
+	right: 3%;
+} 
+
+
+
+
 footer p{
 	font-size: 1.6rem;
 	text-align: center;
 	position: relative;
-	top: 8rem;
+	top: 2rem;
 }
 
 /***************** Animations/ Effects ****************/
@@ -1381,11 +1350,16 @@ footer p{
     }
 }
 
-@media screen and (max-width: 740px) { 
+@media screen and (max-width: 770px) { 
 
     html{
   		font-size: 55%;
  
+    }
+    footer ul{
+	    width: 50%;
+	  	height: 6rem;
+	   	margin: 0 auto;
     }
 }
 
@@ -1409,6 +1383,7 @@ footer p{
     	width: 4rem;
     	height: auto;
     }
+
 
 }
 /* XS screens/ zoom fixes */
