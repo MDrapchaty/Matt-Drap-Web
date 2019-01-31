@@ -1158,7 +1158,7 @@ footer{
 
 footer ul{
 	width: 33.3%;
-	height: 12rem;
+	height: 30%;
 	margin: 10rem auto 0;
 	position: relative;
 }
@@ -1356,10 +1356,19 @@ footer p{
   		font-size: 55%;
  
     }
+
+    footer{
+    	
+    }
+    
     footer ul{
 	    width: 50%;
 	  	height: 6rem;
-	   	margin: 0 auto;
+	   	
+    }
+
+    footer ul{
+	height: 35%;
     }
 }
 
