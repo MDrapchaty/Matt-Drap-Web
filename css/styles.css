@@ -1157,7 +1157,7 @@ footer{
 }
 
 footer ul{
-	width: 33.3%;
+	width: 50%;
 	height: 30%;
 	margin: 10rem auto 0;
 	position: relative;
@@ -1340,37 +1340,45 @@ footer p{
 
 /** Landing page **/
 
-/* large screens */
+/* X-large screens */
 
+@media screen and (min-width: 1460px) { 
 
+    html{
+    	font-size: 75%;
+    }
 
+    footer ul{
+    	width: 33.3%;
+    }
 
-
-@media screen and (max-width: 360px){
-	
 }
 
-
-
-/* XS screens/ zoom fixes */
-@media screen and (max-width: 480px){
-	
-	#landing_page h1{
-		font-size: 3rem;
+/* Large screens */
+@media screen and (max-width: 1100px){
+	#what_i_do{
+		height: 146rem;
 	}
 
-	#landing_page h1 span{
-		font-size: 3rem;
+	.skills{
+		width: 50%;
 	}
 
-	#scroll_link p{
-		display: none;
+	.skills:nth-child(3){
+		margin-left: 0;
 	}
+
+	.skills:nth-child(5){
+		margin-left: 25%;
+	}
+
+	footer ul{
+    	width: 40%;
+    }
+
 }
 
-
-
-
+/* Medium screens */
 @media screen and (max-width: 700px){
 	#what_i_do{
 		height: 210rem;
@@ -1399,19 +1407,12 @@ footer p{
 	#contact p, #contact form{
 		width: 66.6%;
 	}
-}
 
-@media screen and (max-width: 770px) { 
-
-    html{
+	 html{
   		font-size: 55%;
  
     }
 
-    footer{
-    	
-    }
-    
     footer ul{
 	    width: 50%;
 	  	height: 6rem;
@@ -1424,31 +1425,61 @@ footer p{
 
 }
 
-@media screen and (max-width: 1100px){
-	#what_i_do{
-		height: 146rem;
+/* small screens (Landing Page) */
+@media screen and (max-width: 520px) { 
+
+	html{
+		font-size: 45%;
 	}
 
-	.skills{
-		width: 50%;
+	#landing-page h1{
+		
+		margin-top: 2rem;
 	}
 
-	.skills:nth-child(3){
-		margin-left: 0;
-	}
-
-	.skills:nth-child(5){
-		margin-left: 25%;
-	}
-
-}
-
-@media screen and (min-width: 1460px) { 
-
-    html{
-    	font-size: 75%;
+    #landing-page h1 span{
+  		white-space: normal;  		
     }
+
+    #landing-page a img{
+    	width: 4rem;
+    	height: auto;
+    }
+
+    #landing_page h1{
+		font-size: 3.5rem;
+	}
+
+	#landing_page h1 span{
+		font-size: 3.5rem;
+	}
+
+	#scroll_link p{
+		display: none;
+	}
+
+	#navbar ul li{
+		margin: 2rem 3rem;
+		font-size: 1.6rem;
+    }
+
+    .work_example{
+		width: 50%;
+		height: 33.3%;
+	}
+
+	footer ul{
+    	width: 70%;
+    }
+	
+	footer ul li img{
+		width: 6rem;
+	}
+
 }
+
+
+/* height */
 
 @media screen and (max-height: 450px){
 	#landing-page header a{
