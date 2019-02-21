@@ -10,7 +10,7 @@ var slideItem = document.getElementsByClassName("slide");
 
 var $nav = $('#about');
 
-
+// fade function
 function fade(i){
 	i.each( function() {
       var element = $(this);
@@ -23,6 +23,7 @@ function fade(i){
     });
 }
 
+//fade with delay function
 function fadeDelay(i){
 	i.each( function() {
       var element = $(this);
@@ -35,7 +36,7 @@ function fadeDelay(i){
     });
 }
 
-// bar slide
+// header bar slide
 
   function slide(i) {
     i.each( function() {
