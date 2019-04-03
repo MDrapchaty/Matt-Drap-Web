@@ -46,7 +46,9 @@ function fadeDelay(i){
           		element.addClass('slide_right');
           	}else if (element.attr('data-dir') == 'left'){
           		element.addClass('slide_left');
-          	};
+          	}else if (element.attr('data-dir') == 'up'){
+              element.addClass('slide_up');
+            };
           	
             
             },{
@@ -60,7 +62,6 @@ function fadeDelay(i){
 // Set Navbar to hide on landing page and show on other sections
   $nav.waypoint(function(direction) {
   if (direction === 'down') {
-    console.log('working!');
     document.getElementById("navbar").style.opacity = '1.0';
   }
 }, {
@@ -69,7 +70,6 @@ function fadeDelay(i){
 
 $nav.waypoint(function(direction) {
   if (direction === 'up') {
-    console.log('working! up');
     document.getElementById("navbar").style.opacity = '.0';
   }
 }, {

@@ -996,26 +996,48 @@ h2{
 	background-image: none;
 }
 
-.details{
-	visibility: hidden;
-}
-
 
 .work_button{
 	width: 100%;
 	height: 100%;
 	background-color: lightgrey;
-	-webkit-transition: 500ms ease-in;
-	-o-transition: 500ms ease-in;
-	transition: 500ms ease-in;
+	-webkit-transition: 300ms ease-in;
+	-o-transition: 300ms ease-in;
+	transition: 300ms ease-in;
 }
 
 .work_button:hover{
 	background-color: #f5f5f5;
 }
 
+.details{
+	visibility: hidden;
+	position: relative;
+}
+
+.details h3{
+	font-size: 2.4rem;
+	font-weight: bold;
+	position: relative;
+	bottom: 2rem;
+}
+
+.details p{
+	text-decoration: none;
+	font-size: 1.2rem;
+	position: relative;
+}
+
 .work_button:hover > .details{
 	visibility: visible;
+}
+
+.work_button:hover > .details h3{
+	animation: slide_down .5s linear;
+}
+
+.work_button:hover > .details p{
+	animation: slide_up .5s linear;
 }
 
 
@@ -1278,7 +1300,9 @@ footer p{
 
 /************ Slide animation ***************/
 
-.slide{
+
+/* header slide bars */
+.bar{
 	height: .4rem;
 	width: 7rem;
 	background-color: #072438;
@@ -1293,7 +1317,7 @@ footer p{
 }
 
 
-#contact .slide{
+#contact .bar{
 	top: 9rem;
 	background-color: white;
 }
@@ -1346,7 +1370,7 @@ footer p{
 	}
 }
 
-/*
+
 .slide_up{
 	opacity: 1;
 	animation: slide_up 1s linear;
@@ -1355,22 +1379,40 @@ footer p{
 
 @keyframes slide_up{
 	0% {
-		  bottom: 7%;
+		  top: 8rem;
 	}
 	25%{
-		  bottom: 68.75%;
+		  top: 6rem;
 	}
 	50%{
-		  bottom: 62.5%;
+		  top: 4rem;
 	}
 	75%{
-		  bottom: 56.25%;
+		  top: 2rem;
 	}
 	100%{
-		  bottom: 50%;
+		  top: 0rem;
 	}
 }
-*/
+
+@keyframes slide_down{
+	0% {
+		  bottom: 10rem;
+	}
+	25%{
+		  bottom: 8rem;
+	}
+	50%{
+		  bottom: 6rem;
+	}
+	75%{
+		  bottom: 4rem;
+	}
+	100%{
+		  bottom: 2rem;
+	}
+}
+
 
 /********************** media queries ***********************/
 
