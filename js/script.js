@@ -24,6 +24,16 @@ $(function() {
   }
 
 
+/* work example title on hover */
+
+var $details = $('.details');
+var $workbtn = $('.work_button');
+
+$workbtn.hover(function() {
+    $details.style.visibility = "visible";
+});
+
+
 
   /* modal */ 
 var work = document.getElementsByClassName('work_example');
