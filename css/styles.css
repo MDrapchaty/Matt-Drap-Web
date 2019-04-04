@@ -965,7 +965,7 @@ h2{
 }
 
 
-
+/* Projecy Gallery */
 #gallery{
 	width: 80%;
 	height: 56rem;
@@ -975,6 +975,7 @@ h2{
 	transition: 500ms ease-in;
 }
 
+/* Project examples */ 
 .work_example{
 	float: left;
 	width: 33.3%;
@@ -985,6 +986,8 @@ h2{
 	transition: 500ms ease-in;
 }
 
+
+/* nodejs project URL shortener */
 #nodejs{
 	background: lightgrey url("../img/nodejs2.png") no-repeat;
 	background-size: contain;
@@ -997,10 +1000,12 @@ h2{
 }
 
 
+/* button that opens modal / project div */
 .work_button{
 	width: 100%;
 	height: 100%;
 	background-color: lightgrey;
+	border: none;
 	-webkit-transition: 300ms ease-in;
 	-o-transition: 300ms ease-in;
 	transition: 300ms ease-in;
@@ -1010,6 +1015,7 @@ h2{
 	background-color: #f5f5f5;
 }
 
+/* Project details */
 .details{
 	visibility: hidden;
 	position: relative;
@@ -1028,6 +1034,7 @@ h2{
 	position: relative;
 }
 
+/* on hover show details */
 .work_button:hover > .details{
 	visibility: visible;
 }
