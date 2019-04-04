@@ -980,10 +980,11 @@ h2{
 	float: left;
 	width: 33.3%;
 	height: 50%;
-	background-color:;
-	-webkit-transition: 500ms ease-in;
-	-o-transition: 500ms ease-in;
-	transition: 500ms ease-in;
+	background-color: lightgrey;
+	border: none;
+	-webkit-transition: 300ms ease-in;
+	-o-transition: 300ms ease-in;
+	transition: 300ms ease-in;
 }
 
 
@@ -1001,17 +1002,9 @@ h2{
 
 
 /* button that opens modal / project div */
-.work_button{
-	width: 100%;
-	height: 100%;
-	background-color: lightgrey;
-	border: none;
-	-webkit-transition: 300ms ease-in;
-	-o-transition: 300ms ease-in;
-	transition: 300ms ease-in;
-}
 
-.work_button:hover{
+
+.work_example:hover{
 	background-color: #f5f5f5;
 }
 
@@ -1019,77 +1012,103 @@ h2{
 .details{
 	visibility: hidden;
 	position: relative;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	-ms-transform: translate(-50%,-50%);
+	
 }
 
+/* details title */
 .details h3{
 	font-size: 2.4rem;
 	font-weight: bold;
 	position: relative;
-	bottom: 2rem;
+	margin-bottom: 4rem;
 }
 
-.details p{
-	text-decoration: none;
-	font-size: 1.2rem;
-	position: relative;
+.details h3 span{
+	color: #EE9652;
+	font-size: 1.6rem;
 }
 
 /* on hover show details */
-.work_button:hover > .details{
+.work_example:hover > .details{
 	visibility: visible;
 }
 
-.work_button:hover > .details h3{
+/* project title */
+.work_example:hover > .details h3{
 	animation: slide_down .5s linear;
 }
 
-.work_button:hover > .details p{
+/* Learn more about project button */
+.work_button{
+	position: relative;
+	text-decoration: none;
+	font-size: 1.6rem;
+  	border: .2rem solid #EE9652; 
+  	padding: 1rem 2rem;
+
+}
+
+/* learn more button slide up*/
+.work_example:hover > .details > .work_button{
 	animation: slide_up .5s linear;
+}
+
+/* learn more button effects */
+.work_button:hover{
+	background-color: #EE9652;
+	color: #f5f5f5; 
+	-webkit-transition: 300ms ease;
+	-o-transition: 300ms ease;
+	transition: 300ms ease;
 }
 
 
 /* The Modal (background) */
 .modal {
-  display: none; /* Hidden by default */
-  position: fixed; /* Stay in place */
-  z-index: 1; /* Sit on top */
-  left: 0;
-  top: 0;
-  width: 100%; /* Full width */
-  height: 100%; /* Full height */
-  overflow: auto; /* Enable scroll if needed */
-  background-color: rgb(0,0,0); /* Fallback color */
-  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
 }
 
 /* Modal Content/Box */
 .modal_content {
-  background-color: #fefefe;
-  margin: 0 auto; /* centered */
-  padding: 2rem;
-  border: .1rem solid #888;
-  width: 66.6%; 
-  height: 25rem;
-  position: absolute;
-  left: 50%;
-  top: 50%;
+    background-color: #fefefe;
+    margin: 0 auto; /* centered */
+    padding: 2rem;
+    border: .1rem solid #888;
+    width: 66.6%; 
+    height: 25rem;
+    position: absolute;
+    left: 50%;
+    top: 50%;
   transform: translate(-50%,-50%);
   -ms-transform: translate(-50%,-50%);
 }
 
 /* The Close Button */
 .close {
-  color: #aaa;
-  float: right;
-  font-size: 28px;
-  font-weight: bold;
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
 }
 
 .close:hover,
 .close:focus {
-  color: black;
-  text-decoration: none;
-  cursor: pointer;
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
 }
 
 /***********  CONTACT  ***********/
@@ -1404,19 +1423,19 @@ footer p{
 
 @keyframes slide_down{
 	0% {
-		  bottom: 10rem;
-	}
-	25%{
 		  bottom: 8rem;
 	}
-	50%{
+	25%{
 		  bottom: 6rem;
 	}
-	75%{
+	50%{
 		  bottom: 4rem;
 	}
-	100%{
+	75%{
 		  bottom: 2rem;
+	}
+	100%{
+		  bottom: 0rem;
 	}
 }
 
