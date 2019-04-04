@@ -1,5 +1,5 @@
 $(function() {
-    console.log("hello world");
+    
 
 //Smooth scrolling on link click
     $(document).on('click', 'a[href^="#"]', function (event) {
@@ -22,16 +22,6 @@ $(function() {
     }
     prevScrollpos = currentScrollPos;
   }
-
-
-/* work example title on hover */
-
-var $details = $('.details');
-var $workbtn = $('.work_button');
-
-$workbtn.hover(function() {
-    $details.style.visibility = "visible";
-});
 
 
 

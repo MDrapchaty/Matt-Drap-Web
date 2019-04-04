@@ -970,9 +970,9 @@ h2{
 	width: 80%;
 	height: 56rem;
 	margin: 4rem auto;
-	-webkit-transition: 500ms ease-in;
-	-o-transition: 500ms ease-in;
-	transition: 500ms ease-in;
+	-webkit-transition: 300ms ease-in;
+	-o-transition: 300ms ease-in;
+	transition: 300ms ease-in;
 }
 
 /* Project examples */ 
@@ -987,7 +987,6 @@ h2{
 	transition: 300ms ease-in;
 }
 
-
 /* nodejs project URL shortener */
 #nodejs{
 	background: lightgrey url("../img/nodejs2.png") no-repeat;
@@ -1000,12 +999,13 @@ h2{
 	background-image: none;
 }
 
+/* on hover show details */
+#nodejs:hover > .details{
+	visibility: visible;
+}
 
-/* button that opens modal / project div */
-
-
-.work_example:hover{
-	background-color: #f5f5f5;
+#test:hover > .details{
+	visibility: visible;
 }
 
 /* Project details */
@@ -1032,10 +1032,8 @@ h2{
 	font-size: 1.6rem;
 }
 
-/* on hover show details */
-.work_example:hover > .details{
-	visibility: visible;
-}
+
+
 
 /* project title */
 .work_example:hover > .details h3{
@@ -1049,7 +1047,6 @@ h2{
 	font-size: 1.6rem;
   	border: .2rem solid #EE9652; 
   	padding: 1rem 2rem;
-
 }
 
 /* learn more button slide up*/
@@ -1068,7 +1065,7 @@ h2{
 
 
 /* The Modal (background) */
-.modal {
+.modal{
     display: none; /* Hidden by default */
     position: fixed; /* Stay in place */
     z-index: 1; /* Sit on top */
@@ -1079,10 +1076,11 @@ h2{
     overflow: auto; /* Enable scroll if needed */
     background-color: rgb(0,0,0); /* Fallback color */
     background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    z-index: 3;
 }
 
 /* Modal Content/Box */
-.modal_content {
+.modal_content{
     background-color: #fefefe;
     margin: 0 auto; /* centered */
     padding: 2rem;
@@ -1097,7 +1095,7 @@ h2{
 }
 
 /* The Close Button */
-.close {
+.close{
     color: #aaa;
     float: right;
     font-size: 28px;
