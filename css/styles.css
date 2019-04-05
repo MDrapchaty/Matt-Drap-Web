@@ -987,6 +987,11 @@ h2{
 	transition: 300ms ease-in;
 }
 
+.test{
+	width: 100%;
+	height: 100%;
+}
+
 /* nodejs project URL shortener */
 #nodejs{
 	background: lightgrey url("../img/nodejs2.png") no-repeat;
@@ -994,19 +999,18 @@ h2{
 
 }
 
-#nodejs:hover{
+
+
+.test:hover{
 	background-color: #f5f5f5; 
 	background-image: none;
 }
 
 /* on hover show details */
-#nodejs:hover > .details{
+.test:hover > .details{
 	visibility: visible;
 }
 
-#test:hover > .details{
-	visibility: visible;
-}
 
 /* Project details */
 .details{
@@ -1036,7 +1040,7 @@ h2{
 
 
 /* project title */
-.work_example:hover > .details h3{
+.test:hover > .details h3{
 	animation: slide_down .5s linear;
 }
 
@@ -1050,7 +1054,7 @@ h2{
 }
 
 /* learn more button slide up*/
-.work_example:hover > .details > .work_button{
+.test:hover > .details > .work_button{
 	animation: slide_up .5s linear;
 }
 
@@ -1066,9 +1070,8 @@ h2{
 
 /* The Modal (background) */
 .modal{
-    display: none; /* Hidden by default */
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
+    display: none; 
+    position: fixed; 
     left: 0;
     top: 0;
     width: 100%; /* Full width */
