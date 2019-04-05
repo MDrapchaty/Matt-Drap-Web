@@ -182,7 +182,7 @@ h2{
 }
 
 
-
+/* typing effect */
 #typed{
 	display: inline-block;
 	font-size: 4rem;
@@ -202,7 +202,7 @@ h2{
       animation-delay: 1.5s;
 }
 
-/* The typing effect */
+/* The typing effect animation*/
 @keyframes typing {
   from { width: 0 }
   to { width: 100% }
@@ -1447,17 +1447,14 @@ footer p{
 
 /* X-large screens */
 
-@media screen and (min-width: 1460px) { 
 
-    html{
-    	font-size: 75%;
-    }
 
-    footer ul{
-    	width: 33.3%;
-    }
-
+@media screen and (max-width: 1600px){
+	#about h3, #about p{
+		width: 50%;
+	}
 }
+
 
 /* Large screens */
 @media screen and (max-width: 1100px){
@@ -1479,21 +1476,13 @@ footer p{
 
 }
 
-@media screen and (min-width: 1100px){
-
-	footer ul{
-    	width: 40%;
-    }
-
-    #about h3, #about p{
-		width: 50%;
-	}
-
-}
-
 
 /* Medium screens */
-@media screen and (max-width: 700px){
+@media screen and (max-width: 768px){
+	html{
+  		font-size: 55%;
+    }
+
 	#what_i_do{
 		height: 210rem;
 	}
@@ -1522,10 +1511,10 @@ footer p{
 		width: 66.6%;
 	}
 
-	 html{
-  		font-size: 55%;
- 
-    }
+	.work_example{
+		width: 50%;
+		height: 33.3%;
+	}
 
     footer ul{
 	    width: 50%;
@@ -1550,33 +1539,33 @@ footer p{
 		margin: 2rem 3rem;
     }
 
-	#landing-page h1{
-		margin-top: 2rem;
-		font-size: 3.5rem;
-	}
-
-    #landing-page h1 span{
-  		white-space: normal;  
-  		font-size: 3.5rem;		
-    }
-
-    #landing-page a img{
+	
+    #landing_page a img{
     	width: 4rem;
     	height: auto;
     }
 
-	.flip_btn{
-		left: 48.5%;
+	#landing_page > div > a::before, #landing_page > div > a::after{
+		font-size: 1.6rem;
 	}
 
 	#scroll_link p{
 		display: none;
 	}
 
-    .work_example{
-		width: 50%;
-		height: 33.3%;
-	}
+    #about h3::before{
+
+    width: 2rem;
+    height: 2rem;
+   
+}
+
+#about h3::after{
+	
+    width: 2rem;
+    height: 2rem;
+    
+}
 
 	footer ul{
     	width: 70%;
@@ -1588,11 +1577,17 @@ footer p{
 
 }
 
+@media screen and (max-width: 360px){
+	html{
+		font-size: 35%;
+	}
+}
+
 
 /* height */
 
-@media screen and (max-height: 450px){
-	#landing-page header a{
+@media screen and (max-height: 560px){
+	#landing_page header a{
 		display: none;
 	}
 
