@@ -1551,12 +1551,13 @@ footer p{
     }
 
 	#landing-page h1{
-		
 		margin-top: 2rem;
+		font-size: 3.5rem;
 	}
 
     #landing-page h1 span{
-  		white-space: normal;  		
+  		white-space: normal;  
+  		font-size: 3.5rem;		
     }
 
     #landing-page a img{
@@ -1564,12 +1565,8 @@ footer p{
     	height: auto;
     }
 
-    #landing_page h1{
-		font-size: 3.5rem;
-	}
-
-	#landing_page h1 span{
-		font-size: 3.5rem;
+	.flip_btn{
+		left: 48.5%;
 	}
 
 	#scroll_link p{
