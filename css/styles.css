@@ -1445,8 +1445,25 @@ footer p{
 
 /** Landing page **/
 
-/* X-large screens */
+/*
+@media screen and (max-width: 2600px){
+	html{
+		font-size: 100%;
+	}
+	
+	#landing_page > div{
 
+	}
+	
+	#landing_page > div > a::before, #landing_page > div > a::after{
+		font-size: 2.5rem;
+	}
+
+
+}
+
+*/
+/* X-large screens */
 
 
 @media screen and (max-width: 1600px){
@@ -1532,7 +1549,7 @@ footer p{
 @media screen and (max-width: 520px) { 
 
 	html{
-		font-size: 45%;
+		font-size: 42.5%;
 	}
 
 	#navbar ul li{
@@ -1546,7 +1563,7 @@ footer p{
     }
 
 	#landing_page > div > a::before, #landing_page > div > a::after{
-		font-size: 1.6rem;
+		font-size: 2rem;
 	}
 
 	#scroll_link p{
@@ -1558,14 +1575,30 @@ footer p{
     width: 2rem;
     height: 2rem;
    
-}
+	}
 
-#about h3::after{
+	#about h3::after{
 	
     width: 2rem;
     height: 2rem;
     
-}
+	}
+	
+	#projects{
+		height: 145rem;
+	}
+
+	#gallery{
+	
+	height: 112rem;
+	
+	}
+
+	.work_example{
+		width: 100%;
+		height: 16.6%;
+	}
+
 
 	footer ul{
     	width: 70%;
