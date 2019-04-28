@@ -1621,6 +1621,10 @@ footer p{
 		font-size: 3.5rem;
 	}
 
+	.flip_btn{
+		left: 45%;
+	}
+
 	.skills p{
 		font-size: 2rem;
 	}
