@@ -1445,25 +1445,23 @@ footer p{
 
 /** Landing page **/
 
-/*
-@media screen and (max-width: 2600px){
+
+/* X-large screens */
+
+@media screen and (min-width: 2200px){
 	html{
-		font-size: 100%;
+		font-size: 85%;
 	}
-	
+
 	#landing_page > div{
 
 	}
-	
+
 	#landing_page > div > a::before, #landing_page > div > a::after{
-		font-size: 2.5rem;
+		width: 18rem;
+		height: 6rem;
 	}
-
-
 }
-
-*/
-/* X-large screens */
 
 
 @media screen and (max-width: 1600px){
@@ -1555,7 +1553,10 @@ footer p{
 	#navbar ul li{
 		margin: 2rem 3rem;
     }
-
+	
+	#landing_page h1, #landing_page h1 span{
+		font-size: 3.5rem;
+	}
 	
     #landing_page a img{
     	width: 4rem;
@@ -1563,7 +1564,7 @@ footer p{
     }
 
 	#landing_page > div > a::before, #landing_page > div > a::after{
-		font-size: 2rem;
+		font-size: 1.6rem;
 	}
 
 	#scroll_link p{
@@ -1618,7 +1619,7 @@ footer p{
 	}
 
 	#landing_page h1, #landing_page h1 span{
-		font-size: 3.5rem;
+		font-size: 3.2rem;
 	}
 
 	.flip_btn{
