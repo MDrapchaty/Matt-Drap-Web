@@ -258,8 +258,8 @@ h2{
   justify-content: center;
   align-items: center;
   margin: 0;
-  width: 160px;
-  height: 50px;
+  width: 16rem;
+  height: 5.5rem;
   position: absolute;
   border: .4rem solid #EE9652;
   font-weight: bold;
@@ -994,10 +994,28 @@ h2{
 
 /* nodejs project URL shortener */
 #nodejs{
-	background: lightgrey url("../img/nodejs2.png") no-repeat;
-	background-size: contain;
+	background: #F0F0F0 url("../img/projects/nodejs2.png") no-repeat;
+	background-size: 80%;
+	background-position: center;
+
 
 }
+
+/* natgeo article */
+#natgeo{
+	background: lightgrey url("../img/projects/natgeo.jpeg") no-repeat;
+	background-size: cover;
+	background-position: center;
+
+}
+
+#schala{
+	background: lightgrey url("../img/projects/schala.jpg") no-repeat;
+	background-size: cover;
+	background-position: center;
+
+}
+
 
 
 
@@ -1600,7 +1618,7 @@ footer p{
 
 	#gallery{
 	
-	width: 66.6%;
+	width: 50%;
 	height: 132rem;
 	
 	}
@@ -1655,6 +1673,9 @@ footer p{
 		display: none;
 	}
 }
+
+
+
 
 
 
