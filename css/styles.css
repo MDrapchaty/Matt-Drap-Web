@@ -1165,7 +1165,7 @@ h2{
 #contact form{
 	position: relative;
 	top: 14rem;
-	width: 33.3%;
+	width: 50%;
 	margin: 4rem auto;
 	transition: 500ms ease-in;
 }
@@ -1479,15 +1479,31 @@ footer p{
 	}
 
 	#landing_page > div > a::before, #landing_page > div > a::after{
-		width: 18rem;
-		height: 6rem;
+		width: 16rem;
+		height: 4rem;
 	}
+
+	#contact form, #contact p{
+		width: 33.3%;
+	}
+
+}
+
+@media screen and (max-width: 2200px){
+	#contact form, #contact p{
+		width: 33.3%;
+	}
+
 }
 
 
 @media screen and (max-width: 1600px){
 	#about h3, #about p{
 		width: 50%;
+	}
+
+	#contact form, #contact p{
+		width: 40%;
 	}
 }
 
@@ -1513,6 +1529,7 @@ footer p{
 	#about h3, #about p{
 		width: 66.6%;
 	}
+	
 
 }
 
