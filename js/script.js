@@ -1,6 +1,13 @@
 $(function() {
     
 
+//if mobile
+
+if( /Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent) ) {
+    
+}
+
+
 //Smooth scrolling on link click
     $(document).on('click', 'a[href^="#"]', function (event) {
       event.preventDefault();
