@@ -1,15 +1,13 @@
 $(function() {
     
-
+/*
 //if mobile
-
-
 
 if( /Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent) ) {
     $('#about').style.color = 'pink';
     document.getElementById("about").style.color = "pink";
 }
-
+*/
 
 //Smooth scrolling on link click
     $(document).on('click', 'a[href^="#"]', function (event) {
