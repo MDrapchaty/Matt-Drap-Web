@@ -312,6 +312,15 @@ h2{
 	-ms-transform: translate(-50%,-50%);
 }
 
+#mobile_contact{
+	visibility: hidden;
+	position: absolute;
+	left: 50%;
+	top: 75%;
+	z-index: 2;
+	transform: translate(-50%,-50%);
+	-ms-transform: translate(-50%,-50%);
+}
 
 /* scroll down link */
 
@@ -1675,6 +1684,7 @@ footer p{
 	}
 
 	.flip_btn{
+		visibility: hidden;
 		left: 45%;
 	}
 

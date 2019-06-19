@@ -4,11 +4,6 @@ $(function() {
 //if mobile
 
 
-if('1' == '1'){ 
-  console.log('helllllo!');
-
-
-}
 
 if( /Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent) ) {
     $('#about').style.color = 'pink';
