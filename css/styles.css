@@ -320,6 +320,17 @@ h2{
 	z-index: 2;
 	transform: translate(-50%,-50%);
 	-ms-transform: translate(-50%,-50%);
+	color: white;
+	border: .4rem solid #EE9652;
+    font-weight: bold;
+    font-size: 2rem;
+    width: 16rem;
+    height: 5.5rem;
+    line-height: 5rem;
+	padding: auto;
+    text-decoration: none;
+        
+	
 }
 
 /* scroll down link */
@@ -1676,7 +1687,7 @@ footer p{
 
 @media screen and (max-width: 360px){
 	html{
-		font-size: 40%;
+		font-size: 42.5%;
 	}
 
 	#landing_page h1, #landing_page h1 span{
@@ -1686,6 +1697,10 @@ footer p{
 	.flip_btn{
 		visibility: hidden;
 		left: 45%;
+	}
+
+	#mobile_contact{
+		visibility: visible;
 	}
 
 	.skills p{
