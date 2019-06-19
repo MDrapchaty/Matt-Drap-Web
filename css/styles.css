@@ -329,8 +329,10 @@ h2{
     line-height: 5rem;
 	padding: auto;
     text-decoration: none;
-        
-	
+}
+
+#mobile_contact::hover{
+	background-color: #EE9652;
 }
 
 /* scroll down link */
