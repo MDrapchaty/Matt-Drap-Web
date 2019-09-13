@@ -42,24 +42,21 @@ for (i = 0; i < 6; i++) {
   console.log(btn);
   // Get the <span> element that closes the modal
   var span = document.getElementsByClassName('close')[i];
-  let test = modal[i];
+  let t_mod = modal[i];
   
   // When the user clicks on the button, open the modal 
   btn.onclick = function() {
-    test.style.display = "block";
+    t_mod.style.display = "block";
     
   }
 
   // When the user clicks on <span> (x), close the modal
   span.onclick = function() {
-    test.style.display = "none";
+    t_mod.style.display = "none";
   }
 
-  // When the user clicks anywhere outside of the modal, close it
- 
-
 }
-
+// When the user clicks anywhere outside of the modal, close it
  window.onclick = function(event) {
     if (event.target == modal[0]) {
       modal[0].style.display = "none";
