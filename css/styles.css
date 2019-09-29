@@ -135,7 +135,7 @@ h2{
 	width: 100%;
 	position: fixed;
 	top: 0;
-	background-color: #F0F0F0;	
+	background-color: #f5f5f5;	
 	opacity: .0;
 	height: 6rem;
 	z-index: 3;
@@ -355,9 +355,6 @@ h2{
     transition: 0.5s;
 }
 
-#scroll_link p{
-
-}
 
 #scroll_link img{
 	position: absolute;
@@ -375,7 +372,7 @@ h2{
 	width: 100%;
 	height: 14rem;
 	/*background-color: #DEDECD;*/
-	background-color: #f5f5f5;
+	background-color: #FEFEFA;
 
 }
 
@@ -444,11 +441,8 @@ h2{
   width: 100%;
   height: 9rem;
   background-color: #0b3c5d;
-  /*fill: #DEDECD;
-  stroke: #DEDECD;
-  */
-  fill: #f5f5f5;
-  stroke: #f5f5f5;
+  fill: #FEFEFA;
+  stroke: #FEFEFA;
 }
 
 
@@ -462,7 +456,8 @@ h2{
 #what_i_do{
 	width: 100%;
 	height: 84rem;
-	background-color: #DEDECD;
+	background-color: #FFF9EE;
+	/*#DEDECD;  taupe */
 }
 
 #what_i_do h2{
@@ -965,7 +960,7 @@ h2{
 #projects_bg{
 	width: 100%;
 	height: 14rem;
-	/*background-color: #EE9652; */
+	
 }
 
 
@@ -983,7 +978,8 @@ h2{
 	width: 100%;
 	text-align: center;
 	height: 90rem;
-	background-color: #f5f5f5;
+	background-color: #FEFEFA;
+	/* #f5f5f5; */
 }
 
 
@@ -1002,7 +998,7 @@ h2{
 	float: left;
 	width: 33.3%;
 	height: 50%;
-	background-color: lightgrey;
+	background-color: #f5f5f5;
 	border: none;
 	-webkit-transition: 300ms ease-in;
 	-o-transition: 300ms ease-in;
@@ -1016,32 +1012,27 @@ h2{
 
 /* ReactJS pokedex */
 #pokedex{
-	background: #F0F0F0 url("../img/projects/pokedex.png") no-repeat;
+	background: #FEFEFA url("../img/projects/pokedex.png") no-repeat;
 	background-size: 75%;
 	background-position: center;
-
-
-}
-
-/* nodejs project URL shortener */
-#nodejs{
-	background: #F0F0F0 url("../img/projects/nodejs2.png") no-repeat;
-	background-size: 80%;
-	background-position: center;
-
-
 }
 
 /* natgeo article */
 #natgeo{
-	background: lightgrey url("../img/projects/natgeo.jpeg") no-repeat;
+	background: #FEFEFA url("../img/projects/natgeo.jpeg") no-repeat;
 	background-size: cover;
 	background-position: center;
+}
 
+/* nodejs project URL shortener */
+#nodejs{
+	background: #FEFEFA url("../img/projects/nodejs2.png") no-repeat;
+	background-size: 80%;
+	background-position: center;
 }
 
 #schala{
-	background: lightgrey url("../img/projects/schala.jpg") no-repeat;
+	background: #FEFEFA url("../img/projects/schala.jpg") no-repeat;
 	background-size: cover;
 	background-position: center;
 
@@ -1049,7 +1040,7 @@ h2{
 
 
 .trigger:hover{
-	background-color: #f5f5f5; 
+	background-color: #FEFEFA; 
 	background-image: none;
 }
 
@@ -1135,7 +1126,7 @@ h2{
     padding: 5%;
     border: .1rem solid #888;
     width: 70%; 
-    height: 45rem;
+    height: 55rem;
     position: absolute;
     left: 50%;
     top: 50%;
