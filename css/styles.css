@@ -456,7 +456,7 @@ h2{
 #what_i_do{
 	width: 100%;
 	height: 84rem;
-	background-color: #FFF9EE;
+	background-color: #FFF7EE;
 	/*#DEDECD;  taupe */
 }
 
@@ -800,8 +800,23 @@ h2{
 	visibility: visible;
 }
 
-/* Bootstrap */
+/* React Js */
 .skills:nth-child(4) ul li:nth-child(5)::before{
+	content: '';
+	width: 7.5rem;
+	height: 7.5rem;
+	position: absolute;
+	background: url("../img/tool-icons/react.png") no-repeat center center;
+	background-size: 100%;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%,-50%);
+	-ms-transform: translate(-50%,-50%);
+	visibility: visible;
+}
+
+/* Bootstrap */
+.skills:nth-child(4) ul li:nth-child(6)::before{
 	content: '';
 	width: 6rem;
 	height: 6rem;
@@ -815,20 +830,7 @@ h2{
 	visibility: visible;
 }
 
-/* Angular JS */
-.skills:nth-child(4) ul li:nth-child(6)::before{
-	content: '';
-	width: 7.5rem;
-	height: 7.5rem;
-	position: absolute;
-	background: url("../img/tool-icons/angular.svg") no-repeat center center;
-	background-size: 100%;
-	left: 50%;
-	top: 50%;
-	transform: translate(-50%,-50%);
-	-ms-transform: translate(-50%,-50%);
-	visibility: visible;
-}
+
 
 
 /*** Back end icon ***/
@@ -1013,7 +1015,7 @@ h2{
 /* ReactJS pokedex */
 #pokedex{
 	background: #FEFEFA url("../img/projects/pokedex.png") no-repeat;
-	background-size: 75%;
+	background-size: cover;
 	background-position: center;
 }
 
@@ -1025,9 +1027,9 @@ h2{
 }
 
 /* nodejs project URL shortener */
-#nodejs{
-	background: #FEFEFA url("../img/projects/nodejs2.png") no-repeat;
-	background-size: 80%;
+#url_shortener{
+	background: #FEFEFA url("../img/projects/url_shortener.png") no-repeat;
+	background-size: cover;
 	background-position: center;
 }
 
