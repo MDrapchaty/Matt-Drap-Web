@@ -1127,7 +1127,8 @@ h2{
     margin: 0 auto; /* centered */
     padding: 5%;
     border: .1rem solid #888;
-    width: 70%; 
+    width: 70%;
+    max-width: 1200px; 
     height: 55rem;
     position: absolute;
     left: 50%;
@@ -1164,19 +1165,20 @@ hr {
 }
 
 .modal_content p{
-	width: 45%;
+	width: 40%;
 	font-size: 1.3rem;
-	position: relative;
-	top: 8.0rem;
-	left: 5%;
+	position: absolute;
+	top: 35%;
+	left: 10%;
+	right: 5%; 
 	line-height: 1.8rem;
 }
 
 .modal_content ul{
-	width: 45%;
-	position: relative;
-	top: 11.0rem;
-	left: 2.0rem;	
+	width: 40%;
+	position: absolute;
+	bottom: 15%;
+		
 }
 
 
@@ -1193,11 +1195,12 @@ hr {
 
 /* Modal content image */
 .modal_content img{
-	width: 45%;
-	float: right;
-	position: relative;
-	top: 60px;
-	max-height: 65%;
+	width: 40%;
+	position: absolute;
+	top: 30%;
+	right: 5%;
+	margin: : 5%;
+	max-height: 45%;
 }
 
 /* modal content link */  
@@ -1205,6 +1208,7 @@ hr {
 	position: absolute;
 	right: 20%;
 	bottom: 15%;
+	margin: 0 auto;
 	text-decoration: none;
 	font-size: 1.6rem;
   	border: .2rem solid #EE9652; 
@@ -1577,10 +1581,6 @@ footer p{
 		font-size: 85%;
 	}
 
-	#landing_page > div{
-
-	}
-
 	#landing_page > div > a::before, #landing_page > div > a::after{
 		width: 16rem;
 		height: 4rem;
@@ -1613,6 +1613,8 @@ footer p{
 		width: 50%;
 	}
 
+	
+
 	#contact form, #contact p{
 		width: 40%;
 	}
@@ -1639,6 +1641,16 @@ footer p{
 
 	#about h3, #about p{
 		width: 66.6%;
+	}
+
+	.modal_content img{
+		display: none;
+	}
+
+	.modal_content p{
+		width: 66%;
+		margin: 0 auto;
+		left: 0;
 	}
 
 	footer ul{
@@ -1686,21 +1698,7 @@ footer p{
 	.work_example{
 		width: 50%;
 		height: 33.3%;
-	}
-
-	.modal_content img{
-		display: none;
-	}
-
-	.modal_content p{
-		width: 80%;
-		margin: 0 auto;
-		left: 0;
-	}
-
-	.modal_content a{
-		bottom: 15%;
-	}
+	}	
 
 	#pokedex{
 		background-size: 55%;
@@ -1783,12 +1781,17 @@ footer p{
 		display: none;
 	}
 
+	.modal_content p{
+		font-size: 1.6rem;
+		top: 25%;
+	}
+
 	.modal_content a{
-		position: absolute;
-		right: 17.5%;
-		bottom: 10%;
-		transform: translate(-50%,-50%);
-	    -ms-transform: translate(-50%,-50%);
+		position: relative;
+		right: auto;
+		bottom: -350px;
+
+		
 	}
 
 	footer ul{
@@ -1825,10 +1828,6 @@ footer p{
 
 	#contact p{
 		font-size: 2rem;
-	}
-
-	footer ul{
-		
 	}
 }
 
