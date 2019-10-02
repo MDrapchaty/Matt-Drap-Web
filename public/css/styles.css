@@ -1208,7 +1208,6 @@ hr {
 	position: absolute;
 	right: 20%;
 	bottom: 15%;
-	margin: 0 auto;
 	text-decoration: none;
 	font-size: 1.6rem;
   	border: .2rem solid #EE9652; 
@@ -1776,14 +1775,17 @@ footer p{
 	.modal_content p{
 		font-size: 1.6rem;
 		top: 25%;
+		width: 80%;
 	}
 
 	.modal_content a{
-		position: relative;
-		right: auto;
-		bottom: -350px;
+		position: absolute;
+		left: 50%;
+		bottom: 25%;
+		-webkit-transform: translateX(-50%);
+		transform: translateX(-50%);
 
-		
+
 	}
 
 	footer ul{
