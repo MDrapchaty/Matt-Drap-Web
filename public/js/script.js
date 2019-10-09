@@ -87,6 +87,27 @@ for (i = 0; i < 6; i++) {
       }
     });
     */
+
+ //emailjs email service // 
+
+ var email_description = document.getElementById('submit').addEventListener('click', event => {
+  const leadName = document.getElementById('client_name').value;
+  const leadEmail = document.getElementById('client_email').value;
+  const leadMobile = document.getElementById('client_mobile').value;
+  const leadMessage = document.getElementById('client_message').value;
+
+  emailjs.send("gmail", "template_X0MaJdzW", { //template_name is set via emailjs.com dashboard
+      content: email_description // you can store user data in any such variable
+}).then(
+    function(response) {
+      document.write("Email sent successfully!");
+    },
+    function(error) {
+      document.write("Failed to send email.");
+      console.log(error);
+    }
+);
+
 });
 
 
