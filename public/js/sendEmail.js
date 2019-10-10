@@ -6,8 +6,10 @@ emailjs.send('gmail', 'mattdrapweb', {
 		"project_request": contactForm.message.value
 	})
     .then(function(response) {
+       alert("Thank you! Your message has been sent!");
        console.log('SUCCESS!', response.status, response.text);
     }, function(error) {
+       alert("There was an error. Message not sent!");
        console.log('FAILED...', error);
     });
 }    
