@@ -299,12 +299,13 @@
           <h2 class="fade">Contact</h2>
           <div class="slide bar" data-dir="left"></div>
           <p class="fade_delay">Interested in working together? Feel free to reach out if you'd like to get in touch, collaborate, or to just say hello. I'd love to hear from you.</p>
-          <form onsubmit="return sendMail(this);" method="POST" class="fade_delay">
-            <input type="text" name="name" placeholder="Name"><br>
-            <input type="text" name="email" placeholder="E-mail" ><br>
+          <form onsubmit="sendMail(this); return false;" method="POST" class="fade_delay">
+            <input type="text" name="name" id="fullname" placeholder="Name"><br>
+            <input type="text" name="email" id="emailaddress" placeholder="E-mail" ><br>
             <textarea name="message" placeholder="Your Message"  id="message" cols="50" rows="10"></textarea><br>
             <input type="submit" id="submit">
           </form>
+         
       </section>
       
       <footer>
