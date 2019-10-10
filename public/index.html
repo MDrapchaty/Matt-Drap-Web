@@ -9,6 +9,13 @@
 		<title>Matt Drapchaty: Web Designer & Developer</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/emailjs-com@2.4.0/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+       (function(){
+          emailjs.init("user_KJbOguBibOhvuWahybz9w");
+    </script>
 	</head>
 	<body>
 	  
@@ -291,11 +298,11 @@
           <h2 class="fade">Contact</h2>
           <div class="slide bar" data-dir="left"></div>
           <p class="fade_delay">Interested in working together? Feel free to reach out if you'd like to get in touch, collaborate, or to just say hello. I'd love to hear from you.</p>
-          <form class="fade_delay" >
-            <input type="text" name="firstname" placeholder="Name"><br>
-            <input type="text" name="lastname" placeholder="E-mail" ><br>
+          <form onsubmit="return sendMail(this);" method="POST" class="fade_delay">
+            <input type="text" name="name" placeholder="Name"><br>
+            <input type="text" name="email" placeholder="E-mail" ><br>
             <textarea placeholder="Your Message" name="message" id="message" cols="50" rows="10"></textarea><br>
-            <input type="submit" id="submit" value="SUBMIT">
+            <input type="submit" id="submit">
           </form>
       </section>
       
@@ -315,6 +322,7 @@
     <script src="js/jquery.waypoints.min.js"></script>
     <script src="js/script.js"></script>
     <script src="js/waypoint.js"></script>
+    <script src="js/sendEmail.js"> </script>
 
 </body>
 </html>

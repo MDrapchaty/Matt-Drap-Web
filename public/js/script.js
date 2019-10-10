@@ -36,10 +36,10 @@ for (i = 0; i < 6; i++) {
   
   // Get the modal
   modal[i] = document.getElementById('myModal' + i);
-  console.log(modal[i]);
+  
   // Get the button that opens the modal
   var btn = document.getElementsByClassName('work_button')[i];
-  console.log(btn);
+  
   // Get the <span> element that closes the modal
   var span = document.getElementsByClassName('close')[i];
   let t_mod = modal[i];
@@ -90,6 +90,7 @@ for (i = 0; i < 6; i++) {
 
  //emailjs email service // 
 
+/*
  var email_description = document.getElementById('submit').addEventListener('click', event => {
   const leadName = document.getElementById('client_name').value;
   const leadEmail = document.getElementById('client_email').value;
@@ -107,6 +108,8 @@ for (i = 0; i < 6; i++) {
       console.log(error);
     }
 );
+*/
+
 
 });
 
