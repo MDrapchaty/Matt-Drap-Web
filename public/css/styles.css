@@ -1781,7 +1781,7 @@ footer p{
 	.modal_content a{
 		position: absolute;
 		left: 50%;
-		bottom: 25%;
+		bottom: 20%;
 		-webkit-transform: translateX(-50%);
 		transform: translateX(-50%);
 
