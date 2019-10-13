@@ -1829,9 +1829,6 @@ footer p{
 /* height */
 
 @media screen and (max-height: 560px){
-	#landing_page header a{
-		display: none;
-	}
 
 	#scroll_link p{
 		display: none;
