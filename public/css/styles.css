@@ -1716,6 +1716,11 @@ footer p{
 		font-size: 45%;
 	}
 
+	#landing_page{
+		background-attachment: scroll;
+	}
+	
+
 	#navbar ul li{
 		margin: 2rem 3rem;
     }
