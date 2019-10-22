@@ -89,7 +89,7 @@ for (i = 0; i < 6; i++) {
     */
 
 
-//Viewport on mobile bug fix
+//Viewport fix for moblile
 // First we get the viewport height and we multiple it by 1% to get a value for a vh unit
 
 // We listen to the resize event
@@ -98,6 +98,12 @@ window.addEventListener('resize', () => {
   let vh = window.innerHeight * 0.01;
   document.documentElement.style.setProperty('--vh', `${vh}px`);
 });
+
+//Viewport fix for mobile safari/ios
+window.onresize = function() {
+    document.body.height = window.innerHeight;
+}
+window.onresize(); // called to initially set the height.
 
 
 
