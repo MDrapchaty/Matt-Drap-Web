@@ -1363,11 +1363,25 @@ input, select, textarea{
 }
 
 
+
+
 footer{
 	background-color: #072438;
 	height: 40rem;
 	width: 100%;
 	color: white;
+}
+
+/* Resume */
+
+#resume{
+	width: 100%;
+	text-align: center;
+	font-size: 1.6rem;
+}
+
+#resume a{
+	text-decoration: none;
 }
 
 footer ul{
