@@ -1856,5 +1856,9 @@ footer p{
 	}
 }
 
-
+@media screen and (max-height: 420px){
+	.flip_btn{
+		display: none;
+	}
+}
 
